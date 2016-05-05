@@ -1,0 +1,57 @@
+.selling-points
+  .number
+    position: relative
+    top: 60px
+    line-height: 1
+    padding: 0px 20px
+    font-size: 10em
+    font-weight: 700
+    cursor: pointer
+    color: $dark
+
+    @include media-breakpoint-up(md)
+      float: right
+
+    @include media-breakpoint-down(md)
+      font-size: 2.8em
+
+  .title
+    cursor: pointer
+    padding: 10px
+
+  .description
+    border-left: 10px solid transparent
+    padding-left: 15px
+
+  .text-secondary
+    .number
+      background-color: $secondary
+    .description, .title
+      border-color: $secondary
+    .link
+      color: $secondary
+      &:hover
+        color: $dark
+        background-color: $secondary
+
+  .text-primary
+    .number
+      background-color: $primary
+    .description, .title
+      border-color: $primary
+    .link
+      color: $primary
+      &:hover
+        color: $dark
+        background-color: $primary
+
+  .text-light
+    .number
+      background-color: $light
+    .description, .title
+      border-color: $light
+    .link
+      color: $light
+      &:hover
+        color: $dark
+        background-color: $light

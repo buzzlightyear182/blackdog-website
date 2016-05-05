@@ -1,0 +1,46 @@
+.where-we-are
+  margin-left: 0px
+  margin-right: 0px
+  padding-top: 60px
+  padding-bottom: 50px
+
+.map-container
+  text-align: center
+  z-index: -10
+  margin: auto
+
+.map
+  position: relative
+  top: 0
+  @include media-breakpoint-up(md)
+    width: 768px
+  @include media-breakpoint-up(lg)
+    width: 992px
+  @include media-breakpoint-up(xl)
+    width: 1200px
+
+.cities
+  li
+    cursor: pointer
+    background-color: $primary
+    width: 15px
+    height: 15px
+    border-radius: 10px
+    border: 2px solid $light
+    position: relative
+
+    &:hover
+      box-shadow: 0px 0px 15px 1px rgba(229,84,68,0.6)
+      transform: scale(1.15)
+      transition: all 0.5s
+
+  .manila
+    @include media-breakpoint-up(md)
+      top: -312px
+      left: 480px
+    @include media-breakpoint-up(lg)
+      top: -400px
+      left: 632px
+    @include media-breakpoint-up(xl)
+      top: -487px
+      left: 795px
