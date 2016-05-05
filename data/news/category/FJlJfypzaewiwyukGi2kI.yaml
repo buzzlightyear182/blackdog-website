@@ -1,0 +1,64 @@
+---
+:id: FJlJfypzaewiwyukGi2kI
+:title: CSR
+:shortDescription: Blog posts featuring children novels and entertaining stories involving
+  kids.
+:post:
+- :id: A96usFSlY4G0W4kwAqswk
+  :title: This is another sample news article
+  :slug: another-news-article
+  :author:
+  - :id: F0ryxq0umOAG4UsmiwMua
+    :name: Sally Leonard
+    :profilePhoto:
+      :title: Mike Springer
+      :url: "//images.contentful.com/fvvfy7j5vz8j/2xA3oKlZTuQ0Wgs2Wm2Mkk/b1569f20629d6ea11d070d6b19ebb2a4/kenchoong.jpeg"
+    :biography: Sally Leonard is the top boss of Black Dog Consultants.
+    :createdEntries:
+    - :id: 1asN98Ph3mUiCYIYiiqwko
+      :title: This is our first sample news
+      :slug: sample-news-article
+      :author:
+      - :id: F0ryxq0umOAG4UsmiwMua
+      :body: |-
+        __Lorem ipsum dolor sit amet__, consectetur adipiscing elit. Sed ultricies luctus metus, sed elementum lacus imperdiet vitae. Aliquam erat volutpat. Nulla est orci, ullamcorper ut lobortis at, porttitor eu dolor. Vivamus eleifend varius felis, id rutrum nulla elementum eget. Aliquam commodo accumsan tincidunt. Phasellus consectetur leo vel velit elementum, id finibus neque efficitur. *Curabitur mattis risus et ante luctus ornare. Maecenas porta vitae est sed consequat. Praesent mi enim, dapibus in accumsan non, varius tincidunt eros.* Sed ex augue, efficitur vitae molestie eu, vestibulum vitae lectus. Suspendisse gravida lacus vel commodo fermentum. Vestibulum porttitor ipsum non quam volutpat gravida. Cras vulputate faucibus dignissim. Pellentesque efficitur posuere dapibus. Fusce eget ipsum sit amet urna sodales pretium.
+
+        > Quisque quis odio ac metus semper posuere id sit amet est. Sed aliquam molestie est, lobortis cursus ante malesuada sed. Donec ornare consectetur ornare. Sed ut metus ut massa lacinia semper ac ut orci. Sed in ullamcorper elit, at posuere urna. Aliquam in sapien scelerisque, porttitor mauris nec, convallis nulla. Vivamus risus massa, tincidunt vitae aliquam sed, porttitor ac dui. Praesent quis risus pharetra, porta nisl ut, aliquam purus. Donec pretium id nisl id pulvinar. Quisque porta volutpat massa eget tempor. Curabitur eget scelerisque odio. Aliquam ac mauris sem. Mauris mattis at leo ut tincidunt. Etiam vel scelerisque est.
+
+        Ut id augue ac tortor fringilla vehicula ac sed est. Nulla eu magna a elit imperdiet dictum. Nunc a hendrerit urna, nec ultricies sem. Mauris at elementum turpis. Curabitur augue neque, congue vitae neque vel, convallis aliquam risus. Proin consectetur a felis sed bibendum. Vestibulum congue, nisl vitae viverra varius, neque tellus sollicitudin nisi, nec mattis erat ligula at risus. Nullam malesuada fringilla lectus at laoreet. Suspendisse at faucibus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer iaculis velit eget nunc rutrum bibendum. Fusce vel dui id risus blandit feugiat in eget lectus. Cras iaculis consequat sem, quis laoreet massa consectetur nec. Aliquam erat volutpat.
+      :category:
+      - :id: 6XL7nwqRZ6yEw0cUe4y0y6
+        :title: People
+        :shortDescription: Blog posts featuring extracts from classical books, new
+          novels and literary criticism.
+        :icon:
+          :title: Pen icon
+          :url: "//images.contentful.com/fvvfy7j5vz8j/5Q6yYElPe8w8AEsKeki4M4/0304c1c792e6adbc2e70c130d18f5430/Streamline-28-64.png"
+        :post:
+        - :id: 1asN98Ph3mUiCYIYiiqwko
+      :tags:
+      - Literature
+      - fantasy
+      - children
+      - novel
+      - fiction
+      - animals
+      - rabbit
+      - girl
+      :featuredImage:
+        :title: Alice in Wonderland
+        :url: "//images.contentful.com/fvvfy7j5vz8j/bXvdSYHB3Guy2uUmuEco8/8cb2ac16a439ef92083715a8feafb87a/alice-in-wonderland.gif"
+      :date: !ruby/object:DateTime 1865-11-26 00:00:00.000000000 Z
+      :comments: false
+    - :id: A96usFSlY4G0W4kwAqswk
+  :body: |-
+    ## Lorem ipsum dolor sit amet
+    consectetur adipiscing elit. Sed ultricies luctus metus, sed elementum lacus imperdiet vitae. Aliquam erat volutpat. Nulla est orci, ullamcorper ut lobortis at, porttitor eu dolor. Vivamus eleifend varius felis, id rutrum nulla elementum eget. Aliquam commodo accumsan tincidunt. Phasellus consectetur leo vel velit elementum, id finibus neque efficitur. Curabitur mattis risus et ante luctus ornare. Maecenas porta vitae est sed consequat. Praesent mi enim, dapibus in accumsan non, varius tincidunt eros. Sed ex augue, efficitur vitae molestie eu, vestibulum vitae lectus. Suspendisse gravida lacus vel commodo fermentum. Vestibulum porttitor ipsum non quam volutpat gravida. Cras vulputate faucibus dignissim. Pellentesque efficitur posuere dapibus. Fusce eget ipsum sit amet urna sodales pretium.
+
+    Quisque quis odio ac metus semper posuere id sit amet est. Sed aliquam molestie est, lobortis cursus ante malesuada sed. Donec ornare consectetur ornare. Sed ut metus ut massa lacinia semper ac ut orci. Sed in ullamcorper elit, at posuere urna. Aliquam in sapien scelerisque, porttitor mauris nec, convallis nulla. Vivamus risus massa, tincidunt vitae aliquam sed, porttitor ac dui. Praesent quis risus pharetra, porta nisl ut, aliquam purus. Donec pretium id nisl id pulvinar. Quisque porta volutpat massa eget tempor. Curabitur eget scelerisque odio. Aliquam ac mauris sem. Mauris mattis at leo ut tincidunt. Etiam vel scelerisque est.
+
+    Ut id augue ac tortor fringilla vehicula ac sed est. Nulla eu magna a elit imperdiet dictum. Nunc a hendrerit urna, nec ultricies sem. Mauris at elementum turpis. Curabitur augue neque, congue vitae neque vel, convallis aliquam risus. Proin consectetur a felis sed bibendum. Vestibulum congue, nisl vitae viverra varius, neque tellus sollicitudin nisi, nec mattis erat ligula at risus. Nullam malesuada fringilla lectus at laoreet. Suspendisse at faucibus arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer iaculis velit eget nunc rutrum bibendum. Fusce vel dui id risus blandit feugiat in eget lectus. Cras iaculis consequat sem, quis laoreet massa consectetur nec. Aliquam erat volutpat.
+  :category:
+  - :id: FJlJfypzaewiwyukGi2kI
+  :date: !ruby/object:DateTime 2016-05-01 00:00:00.000000000 Z
+  :comments: false
