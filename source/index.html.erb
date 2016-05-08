@@ -5,46 +5,5 @@ title: Black Dog Consultants
 <%= partial "partials/welcome-screen" %>
 <%= partial "partials/who-we-are/about-us" %>
 <%= partial "partials/selling-points" %>
-<div class="row background-primary">
-  <div class="divider">
-    <div class="col-md-5 col-md-offset-1 left-column">
-      <div class="col-sm-6 col-md-8 logo-container">
-        <%= image_tag 'logo.png', :class => "logo" %>
-      </div>
-      <div class="col-sm-12 subheading">
-        <h1 class="text-light">Where We Are</h1>
-      </div>
-    </div>
-    <div class="col-md-6 hidden-sm-down image-container">
-      <%= image_tag 'main.jpg' %>
-    </div>
-  </div>
-</div>
-<div class="row where-we-are background-dark">
-  <div class="map-container">
-    <%= image_tag 'southeast-asia-grayscale.jpg', :class => "map" %>
-  </div>
-  <ul class="cities list-reset">
-    <li class="manila" data-toggle="modal" data-target="#sampleManila"></li>
-  </ul>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="sampleManila" tabindex="-1" role="dialog" aria-labelledby="sampleManilaLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Welcome to Manila!</h4>
-      </div>
-      <div class="modal-body">
-        It's so hot here
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Contact Us</button>
-      </div>
-    </div>
-  </div>
-</div>
+<%= partial "partials/where-we-are" %>
+<%= partial "partials/news" %>

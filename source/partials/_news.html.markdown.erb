@@ -1,0 +1,31 @@
+<div class="row background-primary">
+  <div class="divider">
+    <div class="col-md-5 col-md-offset-1 left-column">
+      <div class="col-sm-6 col-md-8 logo-container">
+        <%= image_tag 'logo.png', :class => "logo" %>
+      </div>
+      <div class="col-sm-12 subheading">
+        <h1 class="text-light">Latest News</h1>
+      </div>
+    </div>
+    <div class="col-md-6 hidden-sm-down image-container">
+      <%= image_tag 'main.jpg' %>
+    </div>
+  </div>
+</div>
+<div class="row news background-white">
+<% posts_array = data.news.posts.to_a.sort_by{ |id, e| e['date'] } %>
+<% posts_array.reverse.each do |post| %>
+  <% p = post[1] %>
+    <div class="col-xs-12 post">
+      <div class="col-sm-8">
+        <h1 class="text-primary"><%= p.title %></h1>
+        <p>by <%= p.author %> posted on: <%= p.date.strftime('%d %b %Y') %></p>
+        <p><%= p.shortIntroduction %></p>
+      </div>
+      <div class="col-sm-4">
+        <%= image_tag(p.featuredImage.url) %>
+      </div>
+    </div>
+  <% end %>
+</div>
