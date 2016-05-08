@@ -30,17 +30,35 @@
     @include media-breakpoint-down(md)
       font-size: 2.8em
 
-  .link
-    text-align: center
-    font-family: $font-family-headings
-    word-break: keep-all
-    padding: 0 0.25rem 0.1rem
-    border: 0px
-    border-radius: 0
+.link
+  text-align: center
+  font-family: $font-family-headings
+  word-break: keep-all
+  padding: 0 0.25rem 0.1rem
+  border: 0px
+  border-radius: 0
 
 .post
-  margin-top: 10px
-  margin-bottom: 10px
+  margin-top: 20px
+  margin-bottom: 20px
+
+  :first-child
+    margin-top: 10px
 
   img
     width: 100%
+
+  &:nth-child(2)
+    .featured-image
+      float: right
+
+  .link
+    color: $primary
+
+    &:hover
+      background-color: $primary
+      color: white
+
+.summary
+  p:nth-child(3)
+    margin-bottom: 5px
