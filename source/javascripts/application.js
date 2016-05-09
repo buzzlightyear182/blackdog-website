@@ -2,4 +2,4 @@
 //= require tether
 //= require bootstrap-sprockets
 //= require magnific-popup
-//= require_tree
+//= require_tree .

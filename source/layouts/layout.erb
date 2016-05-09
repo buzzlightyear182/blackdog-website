@@ -11,8 +11,14 @@
     <%= stylesheet_link_tag :application %>
     <%= javascript_include_tag  :modernizr %>
   </head>
-  <body class="<%= page_classes %>">
-    <%= yield %>
+  <body class="<%= page_classes %> cbp-spmenu-push">
+    <%= partial 'partials/shapes' %>
+    <%= partial 'partials/navigation' %>
+    <div class="container whole">
+      <div class="main">
+        <%= yield %>
+      </div>
+    </div>
     <%= javascript_include_tag  :application %>
   </body>
 </html>
