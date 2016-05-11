@@ -13,13 +13,19 @@
     </div>
   </div>
 </div>
-<div class="row where-we-are background-dark">
-  <div class="map-container">
-    <%= image_tag 'southeast-asia-grayscale.jpg', :class => "map" %>
+<div class="row where-we-are background-white">
+  <!-- <div class="map-container">
+    <%= image_tag 'map.jpg', :class => "map" %>
+  </div> -->
+  <div class="cities-container">
+    <ul class="cities list-reset">
+      <li class="manila" data-toggle="modal" data-target="#sampleManila">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+    </ul>
   </div>
-  <ul class="cities list-reset">
-    <li class="manila" data-toggle="modal" data-target="#sampleManila"></li>
-  </ul>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="sampleManila" tabindex="-1" role="dialog" aria-labelledby="sampleManilaLabel" aria-hidden="true">

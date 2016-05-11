@@ -23,6 +23,15 @@
     border-left: 10px solid transparent
     padding-left: 15px
 
+  .shape-pawprint-click
+    margin-left: 15px
+    width: 55px
+    height: 50px
+
+    &:hover
+      transform: scale(1.10)
+      transition-duration: 1s
+
   .text-secondary
     .number
       background-color: $secondary
@@ -33,6 +42,8 @@
       &:hover
         color: $dark
         background-color: $secondary
+    .shape-pawprint-click
+      fill: $secondary
 
   .text-primary
     .number
@@ -44,6 +55,8 @@
       &:hover
         color: $dark
         background-color: $primary
+    .shape-pawprint-click
+      fill: $primary
 
   .text-light
     .number
@@ -55,3 +68,5 @@
       &:hover
         color: $dark
         background-color: $light
+    .shape-pawprint-click
+      fill: $light
