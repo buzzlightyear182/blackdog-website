@@ -33,11 +33,11 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 //   classie.toggle( menuLeft, 'cbp-spmenu-open' );
 //   disableOther( 'showLeft' );
 // };
-// showRight.onclick = function() {
-//   classie.toggle( this, 'active' );
-//   classie.toggle( menuRight, 'cbp-spmenu-open' );
-//   disableOther( 'showRight' );
-// };
+showRight.onclick = function() {
+  classie.toggle( this, 'active' );
+  classie.toggle( menuRight, 'cbp-spmenu-open' );
+  disableOther( 'showRight' );
+};
 // showTop.onclick = function() {
 //   classie.toggle( this, 'active' );
 //   classie.toggle( menuTop, 'cbp-spmenu-open' );
@@ -54,15 +54,15 @@ var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 //   classie.toggle( menuLeft, 'cbp-spmenu-open' );
 //   disableOther( 'showLeftPush' );
 // };
-showRightPush.onclick = function() {
-  classie.toggle( this, 'active' );
-  classie.toggle( body, 'cbp-spmenu-push-toleft' );
-  classie.toggle( menuRight, 'cbp-spmenu-open' );
-  // disableOther( 'showRightPush' );
-};
+// showRightPush.onclick = function() {
+//   classie.toggle( this, 'active' );
+//   classie.toggle( body, 'cbp-spmenu-push-toleft' );
+//   classie.toggle( menuRight, 'cbp-spmenu-open' );
+//   // disableOther( 'showRightPush' );
+// };
 
 closeMenu.onclick = function(){
-  classie.toggle( body, 'cbp-spmenu-push-toleft' );
+  classie.toggle( body, 'cbp-spmenu-toleft' );
   classie.toggle( menuRight, 'cbp-spmenu-open' );
 }
 

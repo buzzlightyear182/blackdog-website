@@ -1,6 +1,5 @@
 $(window).scroll(function(){
   w = Math.floor( $(window).scrollTop() );
-  console.log(w);
 
   // $('.remove').css( 'background-color', '' );
   if(w <= $('#training').offset().top){

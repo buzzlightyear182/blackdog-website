@@ -10,6 +10,9 @@
 .logo-container
   padding-top: 60px
 
+  @include media-breakpoint-down(sm)
+    margin-bottom: 60px
+
   img
     width: 100%
 
@@ -17,17 +20,59 @@
   vertical-align: bottom
   margin-bottom: 40px
 
-  @include media-breakpoint-down(md)
-    margin-top: 60px
+  // @include media-breakpoint-down(md)
+  //   margin-top: 60px
 
   @include media-breakpoint-up(md)
-    margin-top: 170px
+    position: relative
+    bottom: -100px
+
+  @include media-breakpoint-up(lg)
+    position: relative
+    bottom: -200px
+
+  // @include media-breakpoint-up(xl)
+  //   margin-top: 200px
+
+  // +mq(1920px)
+  //   margin-top: 390px
 
   h4
     line-height: 1.25
 
+    @include media-breakpoint-up(md)
+      font-size: 1.2rem
+
+    @include media-breakpoint-up(lg)
+      font-size: 1.5rem
+
+    @include media-breakpoint-up(xl)
+      font-size: 2rem
+
+    +mq(1490px)
+      font-size: 2.5rem
+
+    +mq(1772px)
+      font-size: 3rem
+
+    +mq(2056px)
+      font-size: 3.5rem
+
+    +mq(2560px)
+      font-size: 4rem
+
   h1
-    font-size: 3.8em
+    @include media-breakpoint-up(lg)
+      font-size: 2.9rem
+
+    @include media-breakpoint-up(xl)
+      font-size: 3.7rem
+
+
+.welcome
+  .subheading
+    position: absolute
+    transform: translateY(200%)
 
 .image-container
   padding-left: 0px
@@ -38,6 +83,6 @@
 
   img
     width: 100%
-    max-width: 530px
+    // max-width: 530px
     float: right
-    max-height: 100vh
+    // max-height: 100vh
