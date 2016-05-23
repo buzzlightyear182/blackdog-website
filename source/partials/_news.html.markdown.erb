@@ -13,22 +13,22 @@
     </div>
   </div>
 </div>
-<div class="row news background-white">
-  <% posts_array = data.news.posts.to_a.sort_by{ |id, e| e['date'] } %>
-  <% posts_array.reverse.each do |post| %>
-  <% p = post[1] %>
+<div class="row articles background-white">
+  <% news_array = data.articles.news.to_a.sort_by{ |id, e| e['date'] } %>
+  <% news_array.reverse.each do |news| %>
+  <% n = news[1] %>
     <div class="col-xs-12 col-lg-offset-1 col-lg-10 post">
       <div class=" col-md-4 featured-image">
-        <%= image_tag(p.featuredImage.url) %>
+        <%= image_tag(n.coverImage.url) %>
       </div>
       <div class="col-md-8 summary">
-        <h1 class="text-primary"><%= p.title %></h1>
-        <p>by <%= p.author %> posted on: <%= p.date.strftime('%d %b %Y') %></p>
-        <%= Minidown.render(p.shortIntroduction) %><a class="btn btn-light-outline link" href="#">Read more here</a>
+        <h1 class="text-primary"><%= n.title %></h1>
+        <small>posted on: <%= n.date.strftime('%d %b %Y') %></small><br>
+        <%= n.metadescription %><a class="btn btn-light-outline link" href="news/<%= n.slug%>">Read more here</a>
       </div>
     </div>
+    <div class="col-xs-12 col-lg-offset-1 col-lg-10 post">
+      <a class="btn btn-light-outline link" href="#">View our full archives</a>
+    </div>
   <% end %>
-  <div class="col-xs-12 col-lg-offset-1 col-lg-10 post">
-    <a class="btn btn-light-outline link" href="#">View our full archives</a>
-  </div>
 </div>

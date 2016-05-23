@@ -31,11 +31,17 @@
     position: relative
     bottom: -200px
 
-  // @include media-breakpoint-up(xl)
-  //   margin-top: 200px
+  @include media-breakpoint-up(xl)
+    position: relative
+    bottom: -270px
 
-  // +mq(1920px)
-  //   margin-top: 390px
+  +mq(1600px)
+    position: relative
+    bottom: -400px
+
+  +mq(2560px)
+    position: relative
+    bottom: -560px
 
   h4
     line-height: 1.25
@@ -68,11 +74,29 @@
     @include media-breakpoint-up(xl)
       font-size: 3.7rem
 
+    +mq(1600px)
+      font-size: 4.7rem
+
+    +mq(2200px)
+      font-size: 5.7rem
+
+    +mq(2560px)
+      font-size: 6.7rem
+
 
 .welcome
   .subheading
-    position: absolute
-    transform: translateY(200%)
+
+    @include media-breakpoint-up(sm)
+      position: absolute
+      transform: translateY(200%)
+
+    @include media-breakpoint-up(md)
+      position: absolute
+      transform: translateY(100%)
+
+    +mq(1600px)
+      transform: translateY(155%)
 
 .image-container
   padding-left: 0px

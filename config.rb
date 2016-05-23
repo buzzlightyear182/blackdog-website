@@ -23,8 +23,12 @@ activate :dotenv
 # end
 
 activate :contentful do |f|
-  f.space         = { news: 'fvvfy7j5vz8j' }
+  f.space         = { articles: 'nj3ym701go0u' }
   f.access_token  = ENV['CONTENTFUL_API_KEY']
-  f.cda_query = { content_type: "2wKn6yEnZewu2SCCkus4as", order: 'sys.createdAt' }
-  f.content_types = { posts: "2wKn6yEnZewu2SCCkus4as", categories: "5KMiN6YPvi42icqAUQMCQe" }
+  f.cda_query = { content_type: "news", order: 'sys.createdAt' }
+  f.content_types = { news: "news", category: "newsCategory" }
+end
+
+data.articles.news.each do |id, n|
+  proxy "news/#{n.slug}.html", "news.html", locals: { news: n }, ignore: true
 end

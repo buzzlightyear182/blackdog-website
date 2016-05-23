@@ -1,7 +1,7 @@
 .selling-points
   .number
     position: relative
-    top: 60px
+    top: 70px
     line-height: 1
     padding: 0px 20px
     font-size: 10em
@@ -13,7 +13,17 @@
       float: right
 
     @include media-breakpoint-down(md)
-      font-size: 2.8em
+      font-size: 4em
+
+    @include media-breakpoint-down(sm)
+      top: 40px
+
+    &:last-child
+      @include media-breakpoint-up(xl)
+        margin-bottom: 60px
+
+  .content
+    margin-bottom: 20px
 
   .title
     cursor: pointer
@@ -27,6 +37,11 @@
     margin-left: 15px
     width: 55px
     height: 50px
+
+    @include media-breakpoint-down(sm)
+      margin-left: 0px
+      width: 40px
+      height: 40px
 
     &:hover
       transform: scale(1.10)

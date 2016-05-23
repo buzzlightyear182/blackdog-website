@@ -1,3 +1,25 @@
-.news
+.articles
   padding-top: 60px
   padding-bottom: 50px
+
+.post
+  margin-top: 20px
+  margin-bottom: 20px
+
+  :first-child
+    margin-top: 10px
+
+  img
+    // width: 100%
+    max-height: 330px
+
+  &:nth-child(2)
+    .featured-image
+      float: right
+
+  .link
+    color: $primary
+
+    &:hover
+      background-color: $primary
+      color: white

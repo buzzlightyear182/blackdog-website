@@ -1,0 +1,14 @@
+---
+title: news.title
+layout: article
+---
+<div class="row" id="coaching">
+  <div class='text-heavy'>
+    <div class="col-md-offset-1 col-md-10 col-lg-9 content text-light">
+      <h1 class="title"><%= news.title %></h1>
+      <div class="description">
+        <%= Minidown.render(news.body) %>
+      </div>
+    </div>
+  </div>
+</div>
