@@ -1,0 +1,32 @@
+---
+title: News Archive - Black Dog Consultants
+layout: article
+---
+
+<div class="row background-secondary">
+  <div class="divider welcome">
+    <div class="col-md-6 left-column">
+      <div class="col-sm-4 col-md-4 logo-container">
+        <%= image_tag 'logo.png', :class => "logo" %>
+      </div>
+      <div class="col-sm-11 content">
+        <h1 class="title">News Archives</h1>
+      <ul class="fa-ul">
+        <% news_array = data.articles.news.to_a.sort_by{ |id, e| e['date'] } %>
+        <% news_array.reverse.each do |news| %>
+        <% n = news[1] %>
+        <li>
+          <a class="btn btn-light-outline link" href="news/<%= n.slug%>">
+            <i class="fa-li fa fa-paw"></i>
+            <h3><%= n.title %> <small>posted on <%= n.date.strftime('%d %b %Y') %></small></h3>
+          </a>
+        </li>
+        <% end %>
+      </ul>
+      </div>
+    </div>
+    <div class="col-md-6 hidden-sm-down image-container">
+      <%= image_tag 'archives-4x3.jpg' %>
+    </div>
+  </div>
+</div>

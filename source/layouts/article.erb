@@ -11,11 +11,14 @@
     <%= stylesheet_link_tag :application %>
     <%= javascript_include_tag  :modernizr %>
   </head>
-  <body class="<%= page_classes %> cbp-spmenu-push">
-    <%= partial 'partials/shapes' %>
-    <%= partial 'partials/navigation' %>
-    <div class="container whole">
-      <div class="main">
+  <% if page_classes.include? 'news-archives' %>
+    <body class="<%= page_classes %> cbp-spmenu-push article background-secondary">
+  <% else %>
+    <body class="<%= page_classes %> cbp-spmenu-push article background-light">
+  <% end %>
+      <%= partial 'partials/shapes' %>
+      <%= partial 'partials/navigation/article' %>
+      <div class="container whole ">
         <%= yield %>
       </div>
     </div>

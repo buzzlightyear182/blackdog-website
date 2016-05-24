@@ -1,0 +1,35 @@
+<div class="row background-secondary" id="contactUs">
+  <div class="divider">
+    <div class="col-md-5 col-md-offset-1 left-column">
+      <div class="col-sm-6 col-md-8 logo-container">
+        <%= image_tag 'logo.png', :class => "logo" %>
+      </div>
+      <div class="col-sm-11 subheading">
+        <h1 class="text-light">Contact Us</h1>
+      </div>
+    </div>
+    <div class="col-md-6 hidden-sm-down image-container">
+      <%= image_tag 'dog-waiting-4x3.jpg' %>
+    </div>
+  </div>
+</div>
+<div class="row text-heavy background-dark content contact">
+  <div class='col-sm-offset-1 col-sm-8'>
+    <h1 class="title text-secondary">Drop in your details and tell us how we can help</h1>
+    <form action="https://formspree.io/your@email.com" method="POST">
+      <fieldset class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" class="form-control">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="_replyto" class="form-control">
+        <small class="text-muted">We'll never share your email with anyone else.</small>
+      </fieldset>
+      <fieldset class="form-group">
+        <textarea name="message" id="message" rows="6" class="form-control">Place your message here</textarea>
+      </fieldset>
+      <input type="submit" value="Send" class="btn btn-secondary btn-block">
+    </form>
+  </div>
+</div>

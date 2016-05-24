@@ -1,6 +1,14 @@
-.articles
+.articles-main
   padding-top: 60px
   padding-bottom: 50px
+
+  li
+    list-style: none
+    margin: auto
+
+    &:nth-child(2n)
+      .featured-image
+        float: right
 
 .post
   margin-top: 20px
@@ -23,3 +31,10 @@
     &:hover
       background-color: $primary
       color: white
+
+  .metadescription
+    margin-top: 20px
+    font-size: 1.6em
+
+  .forward
+    float: right
