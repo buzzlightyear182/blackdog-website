@@ -83,6 +83,9 @@ h1, h2, h3, h4, h5, h6
   color: $light
   border-color: $light
 
+  +mq(375px, max)
+    font-size: 0.9em
+
 .btn-light-outline:hover
   background-color: $light
   border-color: $light
@@ -91,3 +94,5 @@ h1, h2, h3, h4, h5, h6
 .whole.container
   width: 100%
   max-width: 100%
+  +mq(375px, max)
+    padding-left: 0.5rem

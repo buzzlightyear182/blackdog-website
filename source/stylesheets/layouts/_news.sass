@@ -13,6 +13,8 @@
 .post
   margin-top: 20px
   margin-bottom: 20px
+  padding-left: 0px
+  padding-right: 0px
 
   :first-child
     margin-top: 10px
@@ -36,5 +38,21 @@
     margin-top: 20px
     font-size: 1.6em
 
+    @include media-breakpoint-down(sm)
+      font-size: 1em
+      margin-top: 10px
+
   .forward
     float: right
+
+  .featured-image
+    padding: 0px
+
+  .summary
+    padding: 0px
+    @include media-breakpoint-down(sm)
+      margin-top: 20px
+
+  h1
+    @include media-breakpoint-down(sm)
+      font-size: 2em
