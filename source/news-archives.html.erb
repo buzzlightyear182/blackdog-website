@@ -18,7 +18,8 @@ layout: article
         <li>
           <a class="btn btn-light-outline link" href="news/<%= n.slug%>">
             <i class="fa-li fa fa-paw"></i>
-            <h3><%= n.title %> <small>posted on <%= n.date.strftime('%d %b %Y') %></small></h3>
+            <h3><%= n.title %></h3>
+            <small class="pull-left">posted on <%= n.date.strftime('%d %b %Y') %></small></h3>
           </a>
         </li>
         <% end %>

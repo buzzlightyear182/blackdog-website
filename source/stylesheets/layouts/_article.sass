@@ -2,6 +2,9 @@ body.article
   height: 100vh
 
   &.news
+    .shape-pawprint-nav
+      fill: $secondary
+
     .heading
       @include media-breakpoint-down(sm)
         background-color: $primary
@@ -26,9 +29,36 @@ body.article
         margin-top: 40px
 
       .link
-        color: $primary
+        color: $secondary
 
         &:hover
           color: white
-          background-color: $primary
+          background-color: $secondary
           padding: 0.18rem 0.5rem
+
+  .cover-image
+    img
+      width: 100%
+      @include media-breakpoint-up(md)
+        margin-top: 140px
+
+.learningzone
+  .shape-pawprint-nav
+    fill: $primary
+
+  .content
+    a
+      text-align: center
+      font-family: $font-family-headings
+      word-break: keep-all
+      padding: 0 0.25rem 0.1rem
+      border: 0px
+      border-radius: 0
+      text-decoration: none
+      color: $primary
+
+      &:hover
+        color: white
+        background-color: $primary
+        padding: 0.25rem 0.5rem
+

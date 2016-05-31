@@ -1,0 +1,52 @@
+<div class="row background-primary" id="learningZone">
+  <div class="divider">
+    <div class="col-md-5 col-md-offset-1 left-column">
+      <div class="col-sm-6 col-md-8 logo-container">
+        <%= image_tag 'logo.png', :class => "logo" %>
+      </div>
+      <div class="col-sm-11 subheading">
+        <h1 class="text-light">Learning Zone</h1>
+      </div>
+    </div>
+    <div class="col-md-6 hidden-sm-down image-container">
+      <%= image_tag 'lz-4x3.jpg' %>
+    </div>
+  </div>
+</div>
+<div class="row articles-main background-white">
+  <div id="carousel-learningzone" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner" role="listbox">
+    <% learningZone_array = data.articles.learningZone.to_a[0..2].sort_by{ |id, e| e['date'] } %>
+    <% learningZone_array.reverse.each do |learningzone| %>
+    <% lz = learningzone[1] %>
+      <div class="carousel-item active">
+        <div class="col-xs-12 col-lg-offset-1 col-lg-10 post lz">
+          <div class=" col-md-4 featured-image">
+            <%= image_tag(lz.coverImage.url) %>
+          </div>
+          <div class="col-md-8 summary">
+            <h1 class="text-primary"><%= lz.title %></h1>
+            <small>posted on: <%= lz.date.strftime('%d %b %Y') %></small><br>
+            <p class="metadescription"><%= lz.metadescription %></p>
+            <a class="btn btn-light-outline read-more link"
+              href="learningzone/<%= lz.slug%>">Read more here</a>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <a class="left carousel-control" href="#carousel-learningzone" role="button" data-slide="prev">
+    <span class="icon-prev" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-learningzone" role="button" data-slide="next">
+    <span class="icon-next" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <div class="col-xs-12 col-lg-offset-1 col-lg-10 post lz">
+    <a class="btn btn-light-outline forward link" href="/learning-zone-archives">
+      View more Learning Zone articles
+      <i class="fa fa-chevron-right"></i>
+    </a>
+  </div>
+</div>

@@ -25,10 +25,14 @@ activate :dotenv
 activate :contentful do |f|
   f.space         = { articles: 'nj3ym701go0u' }
   f.access_token  = ENV['CONTENTFUL_API_KEY']
-  f.cda_query = { content_type: "news", order: 'sys.createdAt' }
-  f.content_types = { news: "news", category: "newsCategory" }
+  f.cda_query = { order: 'sys.createdAt' }
+  f.content_types = { news: "news", category: "newsCategory", learningZone: 'learningZone' }
 end
 
 data.articles.news.each do |id, n|
   proxy "news/#{n.slug}.html", "news.html", locals: { news: n }, ignore: true
+end
+
+data.articles.learningZone.each do |id, lz|
+  proxy "learningzone/#{lz.slug}.html", "learningzone.html", locals: { learningZone: lz }, ignore: true
 end

@@ -27,13 +27,6 @@
     .featured-image
       float: right
 
-  .link
-    color: $primary
-
-    &:hover
-      background-color: $primary
-      color: white
-
   .metadescription
     margin-top: 20px
     font-size: 1.6em
@@ -56,3 +49,22 @@
   h1
     @include media-breakpoint-down(sm)
       font-size: 2em
+
+  .link
+    color: $secondary
+
+    &:hover
+      background-color: $secondary
+      color: white
+
+.post.lz
+  .link
+    color: $primary
+
+    &:hover
+      background-color: $primary
+      color: white
+
+  .featured-image
+    img
+      width: 100%

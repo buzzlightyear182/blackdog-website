@@ -1,4 +1,4 @@
-<div class="row background-primary" id="latestNews">
+<div class="row background-secondary" id="latestNews">
   <div class="divider">
     <div class="col-md-5 col-md-offset-1 left-column">
       <div class="col-sm-6 col-md-8 logo-container">
@@ -24,7 +24,7 @@
           <%= image_tag(n.coverImage.url) %>
         </div>
         <div class="col-md-8 summary">
-          <h1 class="text-primary"><%= n.title %></h1>
+          <h1 class="text-secondary"><%= n.title %></h1>
           <small>posted on: <%= n.date.strftime('%d %b %Y') %></small><br>
           <p class="metadescription"><%= n.metadescription %></p>
           <a class="btn btn-light-outline read-more link" href="news/<%= n.slug%>">Read more here</a>

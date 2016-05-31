@@ -9,11 +9,11 @@
       </div>
     </div>
     <div class="col-md-6 hidden-sm-down image-container">
-      <%= image_tag 'main.jpg' %>
+      <%= image_tag 'map-sq.jpg' %>
     </div>
   </div>
 </div>
-<div class="row where-we-are background-white">
+<div class="row where-we-are background-dark">
   <!-- <div class="map-container">
     <%= image_tag 'map.jpg', :class => "map" %>
   </div> -->
@@ -26,6 +26,13 @@
       </li>
     </ul>
   </div>
+</div>
+<div class="row where-we-are background-dark icons">
+  <ul class="city-icons">
+    <% 18.times do %>
+      <li class="city-icon-container col-xs-6 col-sm-4 col-md-2"><%= image_tag 'beijing.png'%></li>
+    <% end %>
+  </ul>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="sampleManila" tabindex="-1" role="dialog" aria-labelledby="sampleManilaLabel" aria-hidden="true">
