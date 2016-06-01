@@ -21,5 +21,5 @@ gem 'middleman-dotenv'
 gem 'minidown'
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
+  gem 'rails-assets-tether', '>= 1.3.2'
 end

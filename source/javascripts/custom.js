@@ -1,16 +1,20 @@
-$('.carousel-inner').ready(function(){
-  $('.carousel-item:eq(1)').removeClass('active');
-  console.log("removed")
-})
+$(function() {
+  $('.carousel-inner').ready(function(){
+    $('.carousel-item:eq(1)').removeClass('active');
+    console.log("removed")
+  })
 
-$('.carousel').carousel({
-  interval: 3000
-});
+  $('.carousel').carousel({
+    interval: 3000
+  });
 
-$('.carousel-control.left').click(function() {
-  $('#myCarousel').carousel('prev');
-});
+  $('.carousel-control.left').click(function() {
+    $('#myCarousel').carousel('prev');
+  });
 
-$('.carousel-control.right').click(function() {
-  $('#myCarousel').carousel('next');
+  $('.carousel-control.right').click(function() {
+    $('#myCarousel').carousel('next');
+  });
+
+  $('[data-toggle="tooltip"]').tooltip()
 });

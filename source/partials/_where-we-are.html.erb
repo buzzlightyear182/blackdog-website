@@ -19,7 +19,7 @@
   </div> -->
   <div class="cities-container">
     <ul class="cities list-reset">
-      <li class="manila" data-toggle="modal" data-target="#sampleManila">
+      <li class="manila" data-toggle="tooltip" data-placement="top" title="Manila, Philippines">
         <svg class="shape shape-pawprint">
           <use xlink:href="#shape-pawprint"></use>
         </svg>
@@ -33,24 +33,4 @@
       <li class="city-icon-container col-xs-6 col-sm-4 col-md-2"><%= image_tag 'beijing.png'%></li>
     <% end %>
   </ul>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="sampleManila" tabindex="-1" role="dialog" aria-labelledby="sampleManilaLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Welcome to Manila!</h4>
-      </div>
-      <div class="modal-body">
-        It's so hot here
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Contact Us</button>
-      </div>
-    </div>
-  </div>
 </div>
