@@ -26,7 +26,7 @@
 //     width: 1200px
 
 .cities-container
-  background: image-url('map.jpg') white no-repeat center
+  background: image-url('map-sample.jpg') white no-repeat center
   background-size: 100%
   margin: auto
   @include media-breakpoint-up(md)
@@ -38,6 +38,21 @@
   @include media-breakpoint-up(xl)
     height: 848px
     width: 1200px
+  +mq(1440px)
+    height: 1020px
+    width: 1440px
+
+  .icons-container
+    float: right
+
+  .city-img
+    width: 100%
+    height: auto
+
+  .manila-icon
+    position: relative
+    top: 40px
+    right: 30px
 
 .cities
   position: absolute

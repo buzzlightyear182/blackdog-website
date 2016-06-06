@@ -9,15 +9,12 @@
   :metadescription: 'Heice joins us as our Office Co-ordinator. Heice will be supporting
     the whole back office team together with helping us develop and manage our key
     client relationships and their busy training needs. '
-  :body: "We’re pleased to introduce __Heice Yau__ to you all. Heice joins us from
-    a fast-paced, customer-service background as our Office Co-ordinator. Heice will
-    be supporting the whole back office team together with helping us develop and
-    manage our key client relationships and their busy training needs. \n\nHeice has
-    a brilliant can-do attitude which is one of the things we love about her - plus
-    she speaks not one, but four languages - Cantonese, English, Mandarin and some
-    Japanese. How clever is that?\n\nShe can be contacted on heice@blackdog-consultants.com
-    or by calling the Black Dog HQ hotline on +852 3689 6860 and she’s looking forward
-    to meeting you all."
+  :body: |-
+    We’re pleased to introduce __Heice Yau__ to you all. Heice joined us from a fast-paced, customer-service background and she now works in our Client Solutions Team. Heice supports the whole back office team, helping us develop and manage our key client relationships and their busy training needs.
+
+    Heice has a brilliant can-do attitude which is one of the things we love about her - plus she speaks not one, but five languages - her native Cantonese, together with top quality English and Mandarin and then some Japanese and Thai. How clever is that?
+
+    She can be contacted on [heice@blackdog-consultants.com](mailto:heice@blackdog-consultants.com) or by calling the Black Dog HQ hotline on +852 3689 6860 and she’s looking forward to meeting you all.
   :date: !ruby/object:DateTime 2016-05-21 00:00:00.000000000 Z
   :coverImage:
     :title: Heice Yu

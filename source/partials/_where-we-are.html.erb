@@ -4,7 +4,7 @@
       <div class="col-sm-6 col-md-8 logo-container">
         <%= image_tag 'logo.png', :class => "logo" %>
       </div>
-      <div class="col-sm-11 subheading">
+      <div class="col-sm-11 subheading wow jello">
         <h1 class="text-light">Where We Are Across Asia Pacific</h1>
       </div>
     </div>
@@ -13,10 +13,7 @@
     </div>
   </div>
 </div>
-<div class="row where-we-are background-dark">
-  <!-- <div class="map-container">
-    <%= image_tag 'map.jpg', :class => "map" %>
-  </div> -->
+<div class="row where-we-are background-dark" id="map">
   <div class="cities-container">
     <ul class="cities list-reset">
       <li class="manila" data-toggle="tooltip" data-placement="top" title="Manila, Philippines">
@@ -25,6 +22,9 @@
         </svg>
       </li>
     </ul>
+    <div class="icons-container col-md-2 hidden-sm-down">
+      <%= image_tag 'beijing.png', class: 'manila-icon city-img animated hidden' %>
+    </div>
   </div>
 </div>
 <div class="row where-we-are background-dark icons hidden-md-up">
