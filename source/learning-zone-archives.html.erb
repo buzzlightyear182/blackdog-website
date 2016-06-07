@@ -16,7 +16,7 @@ layout: article
         <% learningZone_array.reverse.each do |learningzone| %>
         <% lz = learningzone[1] %>
         <li>
-          <a class="btn btn-light-outline link" href="learningzone/<%= lz.slug%>">
+          <a class="btn btn-light-outline link" href="/learningzone/<%= lz.slug%>">
             <i class="fa-li fa fa-paw"></i>
             <h3><%= lz.title %></h3>
             <small class="pull-left">posted on <%= lz.date.strftime('%d %b %Y') %></small>

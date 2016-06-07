@@ -16,7 +16,7 @@ layout: article
         <% news_array.reverse.each do |news| %>
         <% n = news[1] %>
         <li>
-          <a class="btn btn-light-outline link" href="news/<%= n.slug%>">
+          <a class="btn btn-light-outline link" href="/news/<%= n.slug%>">
             <i class="fa-li fa fa-paw"></i>
             <h3><%= n.title %></h3>
             <small class="pull-left">posted on <%= n.date.strftime('%d %b %Y') %></small></h3>
