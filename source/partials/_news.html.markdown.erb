@@ -13,7 +13,7 @@
     </div>
   </div>
 </div>
-<div class="row articles-main background-white">
+<div class="row news articles-main background-white">
   <ul>
   <% news_array = data.articles.news.to_a.sort_by{ |id, e| e['date'] } %>
   <% news_array.reverse.each do |news| %>

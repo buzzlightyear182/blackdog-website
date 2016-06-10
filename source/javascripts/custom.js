@@ -19,15 +19,23 @@ $(function() {
 
   $('[data-toggle="tooltip"]').tooltip()
 
-  $('li.manila').hover(
+  $('li.country').hover(
     function(){
-    cityName = $(this)[0].className;
-    iconName = '.' + cityName + '-icon'
-      $(iconName).removeClass('hidden').addClass('tada');
+    var cities =$(this).data('cities').split(',');
+    for (var i = 0; i < cities.length; i++){
+      var cityName = cities[i];
+      console.log(cityName)
+      var iconName = '.' + cityName + '-icon'
+        $(iconName).removeClass('hidden').addClass('tada');
+      }
     },
     function(){
-      console.log(iconName);
-      $(iconName).removeClass('tada').addClass('hidden');
+      cities =$(this).data('cities').split(',');
+      for (var i = 0; i < cities.length; i++){
+        cityName = cities[i];
+        iconName = '.' + cityName + '-icon'
+        $(iconName).removeClass('tada').addClass('hidden');
+      }
     }
   )
 });

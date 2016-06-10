@@ -16,7 +16,47 @@
 <div class="row where-we-are background-dark" id="map">
   <div class="cities-container">
     <ul class="cities list-reset">
-      <li class="manila" data-toggle="tooltip" data-placement="top" title="Manila, Philippines">
+      <li class="country philippines" data-toggle="tooltip" data-cities='manila' data-placement="top" title="Manila, Philippines">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country hongkong" data-toggle="tooltip" data-cities='hongkong' data-placement="top" title="Hongkong">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country china" data-toggle="tooltip" data-html="true" data-cities='beijing,shanghai' data-placement="top" title="Beijing, China</br>Shanghai, China">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country india" data-toggle="tooltip" data-html="true" data-cities='bangalore,mumbai,new_delhi' data-placement="left" title="Bangalore, India</br>Mumbai, India</br>New Delhi, India">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country singapore" data-toggle="tooltip" data-html="true" data-cities='singapore' data-placement="top" title="Singapore, Singapore">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country malaysia" data-toggle="tooltip" data-html="true" data-cities='kuala_lumpur' data-placement="top" title="Kuala Lumpur, Malaysia">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country indonesia" data-toggle="tooltip" data-html="true" data-cities='jakarta' data-placement="top" title="Jakarta, Indonesia">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country australia" data-toggle="tooltip" data-html="true" data-cities='brisbane,melbourne,perth,sydney' data-placement="left" title="Brisbane, Australia</br>Melbourne, Australia</br>Perth, Australia</br>Sydney, Australia">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
+      <li class="country japan" data-toggle="tooltip" data-html="true" data-cities='tokyo' data-placement="top" title="Tokyo, Japan">
         <svg class="shape shape-pawprint">
           <use xlink:href="#shape-pawprint"></use>
         </svg>
@@ -24,6 +64,20 @@
     </ul>
     <div class="icons-container col-md-2 hidden-sm-down">
       <%= image_tag 'beijing.png', class: 'manila-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'hongkong-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'beijing-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'shanghai-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'bangalore-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'mumbai-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'new_delhi-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'singapore-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'kuala_lumpur-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'jakarta-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'brisbane-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'melbourne-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'perth-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'sydney-icon city-img animated hidden' %>
+      <%= image_tag 'beijing.png', class: 'tokyo-icon city-img animated hidden' %>
     </div>
   </div>
 </div>
