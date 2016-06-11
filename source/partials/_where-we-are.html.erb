@@ -9,11 +9,12 @@
       </div>
     </div>
     <div class="col-md-6 hidden-sm-down image-container">
-      <%= image_tag 'where-we-are-4x3.jpg' %>
+      <%= image_tag 'where_we_are.jpg' %>
     </div>
   </div>
 </div>
-<div class="row where-we-are background-dark" id="map">
+<div class="row where-we-are hidden-sm-down" id="map">
+  <h4 class='title'>Hover over the pawprints to find out which cities we're at!</h4>
   <div class="cities-container">
     <ul class="cities list-reset">
       <li class="country philippines" data-toggle="tooltip" data-cities='manila' data-placement="top" title="Manila, Philippines">
@@ -51,7 +52,7 @@
           <use xlink:href="#shape-pawprint"></use>
         </svg>
       </li>
-      <li class="country australia" data-toggle="tooltip" data-html="true" data-cities='brisbane,melbourne,perth,sydney' data-placement="left" title="Brisbane, Australia</br>Melbourne, Australia</br>Perth, Australia</br>Sydney, Australia">
+      <li class="country australia" data-toggle="tooltip" data-html="true" data-cities='brisbane,melbourne,perth,sydney' data-placement="top" title="Brisbane, Australia</br>Melbourne, Australia</br>Perth, Australia</br>Sydney, Australia">
         <svg class="shape shape-pawprint">
           <use xlink:href="#shape-pawprint"></use>
         </svg>
@@ -61,30 +62,60 @@
           <use xlink:href="#shape-pawprint"></use>
         </svg>
       </li>
+      <li class="country london" data-toggle="tooltip" data-html="true" data-cities='london' data-placement="top" title="London, United Kingdom">
+        <svg class="shape shape-pawprint">
+          <use xlink:href="#shape-pawprint"></use>
+        </svg>
+      </li>
     </ul>
-    <div class="icons-container col-md-2 hidden-sm-down">
-      <%= image_tag 'beijing.png', class: 'manila-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'hongkong-icon city-img animated hidden' %>
+    <div class="icons-container col-md-3 hidden-sm-down">
+      <%= image_tag 'manila.png', class: 'manila-icon city-img animated hidden' %>
+      <%= image_tag 'hongkong.png', class: 'hongkong-icon city-img animated hidden' %>
       <%= image_tag 'beijing.png', class: 'beijing-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'shanghai-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'bangalore-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'mumbai-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'new_delhi-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'singapore-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'kuala_lumpur-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'jakarta-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'brisbane-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'melbourne-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'perth-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'sydney-icon city-img animated hidden' %>
-      <%= image_tag 'beijing.png', class: 'tokyo-icon city-img animated hidden' %>
+      <%= image_tag 'shanghai.png', class: 'shanghai-icon city-img animated hidden' %>
+      <%= image_tag 'tokyo.png', class: 'tokyo-icon city-img animated hidden' %>
+      <%= image_tag 'singapore.png', class: 'singapore-icon city-img animated hidden' %>
+      <%= image_tag 'kuala_lumpur.png', class: 'kuala_lumpur-icon city-img animated hidden' %>
+      <%= image_tag 'jakarta.png', class: 'jakarta-icon city-img animated hidden' %>
+      <%= image_tag 'london.png', class: 'london-icon city-img animated hidden' %>
+    </div>
+    <div class="lower-icons-container hidden-sm-down">
+      <div class="col-md-2">
+        <%= image_tag 'brisbane.png', class: 'brisbane-icon city-img animated hidden' %>
+      </div>
+      <div class="col-md-2">
+        <%= image_tag 'bangalore.png', class: 'bangalore-icon city-img animated hidden' %>
+        <%= image_tag 'melbourne.png', class: 'melbourne-icon city-img animated hidden' %>
+      </div>
+      <div class="col-md-2">
+        <%= image_tag 'mumbai.png', class: 'mumbai-icon city-img animated hidden' %>
+        <%= image_tag 'perth.png', class: 'perth-icon city-img animated hidden' %>
+      </div>
+      <div class="col-md-2">
+        <%= image_tag 'new_delhi.png', class: 'new_delhi-icon city-img animated hidden' %>
+        <%= image_tag 'sydney.png', class: 'sydney-icon city-img animated hidden' %>
+      </div>
     </div>
   </div>
 </div>
 <div class="row where-we-are background-dark icons hidden-md-up">
   <ul class="city-icons">
-    <% 18.times do %>
-      <li class="city-icon-container col-xs-6 col-sm-4 col-md-2"><%= image_tag 'beijing.png'%></li>
-    <% end %>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'bangalore.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'beijing.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'brisbane.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'hongkong.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'jakarta.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'kuala_lumpur.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'manila.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'melbourne.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'mumbai.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'new_delhi.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'perth.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'shanghai.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'singapore.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'sydney.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'tokyo.png'%></li>
+    <li class="city-icon-container wow fadeIn col-xs-6 col-sm-4 col-md-2"><%= image_tag 'london.png'%></li>
+
   </ul>
 </div>
