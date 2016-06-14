@@ -1,7 +1,7 @@
 .selling-points
   .number
     position: relative
-    top: 70px
+    top: 45px
     line-height: 1
     padding: 0px 20px
     font-size: 10em
@@ -25,9 +25,24 @@
   .content
     margin-bottom: 20px
 
+    &:first-child .title:hover
+      background-color: $secondary
+
+    &:nth-of-type(2) .title:hover
+      background-color: $light
+
+    &:nth-of-type(3) .title:hover
+      background-color: $primary
+
   .title
     cursor: pointer
     padding: 10px
+
+    &:hover
+      color: $dark
+
+  .fa-paw
+    margin-left: 10px
 
   .description
     border-left: 10px solid transparent
