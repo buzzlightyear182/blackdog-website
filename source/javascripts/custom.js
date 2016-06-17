@@ -54,11 +54,11 @@ $(function() {
         },
         dataType: "json",
         success: function() {
-          $("#submit-success").fadeIn();
-          $("#contact-form").fadeOut();
+          $("#submitSuccess").fadeIn();
+          $("#contactForm").fadeOut();
         },
         error: function() {
-          $("#submit-errors").fadeIn();
+          $("#submitErrors").fadeIn();
         }
       });
     }
