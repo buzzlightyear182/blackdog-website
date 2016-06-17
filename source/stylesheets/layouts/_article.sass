@@ -3,13 +3,7 @@ body.article
 
   &.news
     .shape-pawprint-nav
-      fill: $secondary
-
-    .heading
-      @include media-breakpoint-down(sm)
-        background-color: $primary
-      @include media-breakpoint-up(sm)
-        background-color: inherit
+      fill: $dark
 
     .cover-image
       display: inline-block
@@ -61,4 +55,8 @@ body.article
         color: white
         background-color: $primary
         padding: 0.25rem 0.5rem
+
+.article
+  img
+    width: 100%
 

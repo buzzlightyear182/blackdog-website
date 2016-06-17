@@ -5,6 +5,9 @@ layout: article
 <%= partial '/partials/logo_heading' %>
 <div class="row background-white">
   <div class='text-heavy'>
+    <div class="col-md-4 cover-image">
+      <%= image_tag(news.coverImage.url) %>
+    </div>
     <div class="col-md-8 content text-secondary">
       <h1 class="title"><%= news.title %></h1>
       <div class="description">
@@ -16,9 +19,6 @@ layout: article
           </a>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 cover-image">
-      <%= image_tag(news.coverImage.url) %>
     </div>
   </div>
 </div>

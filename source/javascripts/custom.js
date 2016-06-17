@@ -55,12 +55,12 @@ $(function() {
         dataType: "json",
         success: function() {
           $("#submitSuccess").fadeIn();
-          $("#contactForm").fadeOut();
+          // $("#contactForm").fadeOut();
         },
         error: function() {
           $("#submitErrors").fadeIn();
         }
       });
     }
-  )};
+  });
 });

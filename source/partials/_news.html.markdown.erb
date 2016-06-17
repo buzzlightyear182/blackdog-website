@@ -18,7 +18,7 @@
   <% news_array = data.articles.news.to_a.sort_by{ |id, e| e['date'] } %>
   <% news_array.reverse.each do |news| %>
   <% n = news[1] %>
-    <li>
+    <li class='row'>
       <div class="col-xs-12 col-lg-offset-1 col-lg-10 post">
         <div class=" col-md-4 featured-image">
           <%= image_tag(n.coverImage.url) %>

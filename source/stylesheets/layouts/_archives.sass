@@ -17,6 +17,9 @@
   .image-container
     position: fixed
 
+    img
+      height: 100vh
+
   .title
     color: white
 
@@ -27,9 +30,22 @@
     margin-top: 15px
     margin-bottom: 15px
 
+  .left-column
+    height: 100vh
+
+    @include media-breakpoint-down(sm)
+      padding-right: 10px
+
 .news-archives
   .shape-pawprint-nav
     fill: $dark
 
     &:hover
       fill: $light
+
+.learning-zone-archives
+  .shape-pawprint-nav
+    fill: $light
+
+    &:hover
+      fill: $dark

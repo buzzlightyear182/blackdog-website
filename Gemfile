@@ -17,6 +17,9 @@ gem 'middleman-deploy', '~> 1.0'
 
 gem "contentful_middleman"
 gem 'middleman-dotenv'
+gem 'middleman-imageoptim'
+gem 'middleman-minify-html'
+gem 'builder'
 
 gem 'minidown'
 

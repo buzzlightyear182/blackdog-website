@@ -1,11 +1,13 @@
 $(window).scroll(function(){
   w = Math.floor( $(window).scrollTop() );
 
-  if(w <= $('#training').offset().top){
+  if(w <= $('#aboutUs').offset().top){
+    $('.shape-pawprint-nav').css( 'fill', '#fae5b8' ); //primary
+    $('.shape-pawprint-nav:hover').css( 'fill', '#a49d47' );
+  }else if(w <= $('#training').offset().top){
     $('.shape-pawprint-nav').css( 'fill', '#d0442c' ); //primary
     $('.shape-pawprint-nav:hover').css( 'fill', '#fae5b8' );
-  }
-  else if(w <= $('.selling-points').offset().top){
+  }else if(w <= $('.selling-points').offset().top){
     $('.shape-pawprint-nav').css( 'fill', '#fae5b8' ); //light
     $('.shape-pawprint-nav:hover').css( 'fill', '#a49d47' );
   }else if(w <= $('#whereWeAre').offset().top){

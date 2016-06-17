@@ -22,6 +22,17 @@ activate :dotenv
 #   deploy.flags = '-avzp --chmod=+r'
 # end
 
+configure :build do
+  activate :minify_css
+  activate :minify_javascript
+  activate :minify_html
+  activate :gzip
+
+  # Append a hash to asset urls (make sure to use the url helpers)
+  activate :asset_hash
+
+end
+
 activate :contentful do |f|
   f.space         = { articles: 'nj3ym701go0u' }
   f.access_token  = ENV['CONTENTFUL_API_KEY']
@@ -36,3 +47,5 @@ end
 data.articles.learningZone.each do |id, lz|
   proxy "learningzone/#{lz.slug}.html", "learningzone.html", locals: { learningZone: lz }, ignore: true
 end
+
+page "/feed.xml", :layout => false

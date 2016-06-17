@@ -81,11 +81,20 @@
   a
     // border-bottom: 1px solid $light
     padding: 1em
+    @include media-breakpoint-down(md)
+      padding: 0.5em
+      padding-left: 1em
+
     &.subnav
       padding-left: 40px
       padding-top: 0.5em
       padding-bottom: 0.5em
       text-decoration: none
+
+      @include media-breakpoint-down(md)
+        padding-top: 0.25em
+        padding-bottom: 0.25em
+        padding-left: 20px
 
     .fa-paw
       margin-right: 5px
