@@ -29,7 +29,6 @@ configure :build do
 
   # Append a hash to asset urls (make sure to use the url helpers)
   activate :asset_hash
-
 end
 
 activate :contentful do |f|
@@ -46,5 +45,3 @@ end
 data.articles.learningZone.each do |id, lz|
   proxy "learningzone/#{lz.slug}.html", "learningzone.html", locals: { learningZone: lz }, ignore: true
 end
-
-page "/feed.xml", :layout => false

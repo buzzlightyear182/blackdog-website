@@ -2,6 +2,11 @@
 title: learningZone.title
 layout: article
 ---
+
+<% content_for(:og_title, learningZone.title) %>
+<% content_for(:og_url, "https://blackdog-consultants.com/learningzone/" + learningZone.slug) %>
+<% content_for(:og_description, learningZone.metadescription) %>
+<% content_for(:og_image, "https:" + learningZone.coverImage.url) %>
 <%= partial '/partials/logo_heading' %>
 <div class="row background-white">
   <div class='text-heavy'>

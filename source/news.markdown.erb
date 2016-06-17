@@ -2,6 +2,10 @@
 title: news.title
 layout: article
 ---
+<% content_for(:og_title, news.title) %>
+<% content_for(:og_url, "https://blackdog-consultants.com/news/" + news.slug) %>
+<% content_for(:og_description, news.metadescription) %>
+<% content_for(:og_image, "https:" + news.coverImage.url) %>
 <%= partial '/partials/logo_heading' %>
 <div class="row background-white">
   <div class='text-heavy'>
