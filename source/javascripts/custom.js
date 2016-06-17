@@ -38,4 +38,29 @@ $(function() {
       }
     }
   )
+
+  $("#contactForm").validate({
+    submitHandler: function(form) {
+      $.ajax({
+        url: "//formspree.io/topdog@blackdog-consultants.com",
+        method: "POST",
+        data: {
+          name: $(form).find("input[name='name']").val(),
+          _replyto: $(form).find("input[name='_replyto']").val(),
+          subject: $(form).find("input[name='_subject']").val(),
+          country: $(form).find("input[name='_country']").val(),
+          company: $(form).find("input[name='_company']").val(),
+          message: $(form).find("textarea[name='message']").val()
+        },
+        dataType: "json",
+        success: function() {
+          $("#submit-success").fadeIn();
+          $("#contact-form").fadeOut();
+        },
+        error: function() {
+          $("#submit-errors").fadeIn();
+        }
+      });
+    }
+  )};
 });
