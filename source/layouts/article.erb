@@ -15,6 +15,7 @@
     <meta property="og:type"              content="article" />
     <meta property="og:description"       content="<%= yield_content(:og_description) %>" />
     <meta property="og:image"             content="<%= yield_content(:og_image) %>" />
+    <%= partial 'partials/favicons' %>
     <title>Black Dog Consultants</title>
     <%= stylesheet_link_tag :application %>
     <%= javascript_include_tag  :modernizr %>
@@ -28,6 +29,7 @@
       <%= partial 'partials/navigation/article' %>
       <div class="container whole ">
         <%= yield %>
+        <%= partial 'partials/video_modal' %>
       </div>
     </div>
     <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
