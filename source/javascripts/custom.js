@@ -5,9 +5,9 @@ $(function() {
     $('.carousel-item:eq(1)').removeClass('active');
   })
 
-  $('.carousel').carousel({
-    interval: 3000
-  });
+  // $('.carousel').carousel({
+  //   interval: 3000
+  // });
 
   $('.carousel-control.left').click(function() {
     $('#myCarousel').carousel('prev');
