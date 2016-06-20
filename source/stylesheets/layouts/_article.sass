@@ -1,6 +1,14 @@
 body.article
   height: 100vh
 
+  .content
+    .btn.link
+      text-align: left
+      white-space: normal
+
+      h3
+        word-break: break-word !important
+
   &.news
     .shape-pawprint-nav
       fill: $dark
@@ -34,7 +42,13 @@ body.article
     img
       width: 100%
       @include media-breakpoint-up(md)
-        margin-top: 140px
+        margin-top: 60px
+
+  .text-heavy
+    padding-top: 10px
+
+    h3
+      margin-top: 30px
 
 .learningzone
   .shape-pawprint-nav
@@ -59,4 +73,7 @@ body.article
 .article
   img
     width: 100%
+
+  .image-container.right-column img
+    width: auto !important
 

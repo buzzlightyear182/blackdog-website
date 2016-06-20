@@ -17,6 +17,9 @@
   .image-container
     position: fixed
 
+    &.right-column
+      width: auto !important
+
     img
       height: 100vh
 
@@ -31,7 +34,7 @@
     margin-bottom: 15px
 
   .left-column
-    height: 100vh
+  //   height: 100vh
 
     @include media-breakpoint-down(sm)
       padding-right: 10px
