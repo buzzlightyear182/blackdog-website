@@ -9,6 +9,27 @@ body.article
       h3
         word-break: break-word !important
 
+    .back
+      margin-top: 40px
+      a
+        border-bottom: 0px
+
+    p
+      margin-bottom: 20px
+
+    a
+      text-align: center
+      font-family: $font-family-headings
+      word-break: keep-all
+      padding: 0 0.25rem 0.25rem
+      border-bottom: 2px solid
+      border-radius: 0
+      text-decoration: none
+      font-weight: 700
+
+      &:hover
+        padding: 0.25rem 0.5rem
+
   &.news
     .shape-pawprint-nav
       fill: $dark
@@ -56,19 +77,22 @@ body.article
 
   .content
     a
-      text-align: center
-      font-family: $font-family-headings
-      word-break: keep-all
-      padding: 0 0.25rem 0.1rem
-      border: 0px
-      border-radius: 0
-      text-decoration: none
       color: $primary
+      border-color: $primary
 
       &:hover
         color: white
         background-color: $primary
-        padding: 0.25rem 0.5rem
+
+.news
+  .content
+    a
+      color: $secondary
+      border-color: $secondary
+
+      &:hover
+        color: white
+        background-color: $secondary
 
 .article
   img
