@@ -27,7 +27,8 @@
           <h1 class="text-secondary"><%= n.title %></h1>
           <small>posted on: <%= n.date.strftime('%d %b %Y') %></small><br>
           <p class="metadescription"><%= n.metadescription %></p>
-          <a class="btn btn-light-outline read-more link" href="news/<%= n.slug%>">Read more here</a>
+          <a class="btn btn-light-outline read-more link" target='_blank' rel="noopener noreferrer"
+          href="news/<%= n.slug%>">Read more here</a>
         </div>
       </div>
     </li>

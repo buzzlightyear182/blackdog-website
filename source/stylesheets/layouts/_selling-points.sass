@@ -34,6 +34,10 @@
     &:nth-of-type(3) .title:hover
       background-color: $primary
 
+    .title
+      @include media-breakpoint-down(md)
+        font-size: 2.4em
+
   .title
     cursor: pointer
     padding: 10px

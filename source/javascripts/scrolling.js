@@ -32,6 +32,6 @@ $(window).scroll(function(){
     $('.shape-pawprint-nav').css( 'fill', '#d0442c' ); //primary
     $('.shape-pawprint-nav:hover').css( 'fill', '#fae5b8' );
   }else{
-       $('.shape-pawprint-nav').css( 'fill', '#a49d47' );
+    $('.shape-pawprint-nav').css( 'fill', '#a49d47' );
   }
 });

@@ -2,20 +2,10 @@ $(function() {
   new WOW().init();
 
   $('.carousel-inner').ready(function(){
-    $('.carousel-item:eq(1)').removeClass('active');
+    $('.carousel-item:eq(0)').addClass('active');
   })
 
-  // $('.carousel').carousel({
-  //   interval: 3000
-  // });
-
-  $('.carousel-control.left').click(function() {
-    $('#myCarousel').carousel('prev');
-  });
-
-  $('.carousel-control.right').click(function() {
-    $('#myCarousel').carousel('next');
-  });
+  $('.carousel').carousel()
 
   $('[data-toggle="tooltip"]').tooltip()
 

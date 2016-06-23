@@ -3,6 +3,8 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
+set :markdown_engine, :kramdown
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 activate :autoprefixer
 activate :livereload
