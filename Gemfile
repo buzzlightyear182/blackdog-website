@@ -19,6 +19,7 @@ gem 'middleman-autoprefixer'
 gem 'jquery-middleman'
 
 gem 'middleman-deploy', '~> 1.0'
+gem 'middleman-search_engine_sitemap'
 
 gem 'middleman-dotenv'
 gem 'middleman-imageoptim'

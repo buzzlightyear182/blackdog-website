@@ -3,6 +3,7 @@
 ###
 
 # Time.zone = "UTC"
+require 'builder'
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -40,6 +41,7 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :directory_indexes
 
 helpers do
   def articles_by_category(category)
@@ -50,6 +52,8 @@ helpers do
 end
 
 page "/feed.xml", layout: false
+page "/sitemap.xml", layout: false
+activate :search_engine_sitemap
 
 ###
 # Compass
@@ -120,4 +124,13 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  activate :meta_tags
+end
+
+after_build do |builder|
+  src = File.join(config[:source],"_redirects")
+  dst = File.join(config[:build_dir],"_redirects")
+  builder.source_paths << File.dirname(__FILE__)
+  builder.copy_file(src,dst)
+  puts "Done building"
 end

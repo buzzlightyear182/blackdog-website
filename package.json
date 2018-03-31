@@ -1,7 +1,9 @@
 {
   "name": "blackdog-website",
   "version": "0.0.1",
-  "dependencies": {},
+  "dependencies": {
+    "netlify-cms": "^1.4.0"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-svgmin": "^0.4.0",

@@ -4,7 +4,7 @@ date: 2016/05/21
 category: news
 tags: company
 metadescription: "We’re pleased to introduce Heice Yau to you all. Heice joined us from a fast-paced, customer-service background and she now works in our Client Solutions Team."
-cover_image: '../blog/news/images/heice_main_image.jpg'
+cover_image: '../blog/images/heice_main_image.jpg'
 ---
 
 We’re pleased to introduce __Heice Yau__ to you all. Heice joined us from a fast-paced, customer-service background and she now works in our Client Solutions Team. Heice supports the whole back office team, helping us develop and manage our key client relationships and their busy training needs.
