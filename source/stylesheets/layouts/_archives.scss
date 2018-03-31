@@ -54,7 +54,6 @@
 }
 
 .news-archives {
-
   background: $secondary;
 
   .shape-pawprint-nav {
@@ -69,6 +68,12 @@
 
 .learning-zone-archives {
   background: $primary;
+
+  a {
+    white-space: normal;
+    text-align: left;
+  }
+
   .shape-pawprint-nav {
     fill: $light;
 

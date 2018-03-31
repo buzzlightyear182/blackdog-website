@@ -184,6 +184,8 @@ body.article {
 
     a {
     color: $light;
+    white-space: normal;
+    text-align: left;
 
       &:hover {
         background: $light;
