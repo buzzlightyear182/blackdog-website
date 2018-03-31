@@ -12,7 +12,7 @@ activate :blog do |blog|
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
 
-  blog.sources = "blog/{category}/{year}-{month}-{day}-{title}.html"
+  blog.sources = "blog/{title}.html"
   blog.permalink = "{category}/{title}.html"
 
   # Matcher for blog source files
