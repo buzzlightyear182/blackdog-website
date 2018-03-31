@@ -34,4 +34,4 @@ If you’d like to know more about the work which Hong Kong Guide Dogs Associati
 
 Room 1146F, 11/F, Block F, Wah Lok Industrial Centre, 31-35 Shan Mei Street, Fotan, N.T.
 
-![]()
+![null]()
