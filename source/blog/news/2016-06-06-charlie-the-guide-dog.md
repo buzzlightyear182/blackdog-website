@@ -3,7 +3,7 @@ title: Charlie The Guide Dog
 layout: article
 category: news
 tags: 'csr, guide dog'
-cover_image: /source/charlie_guide_dog.jpg
+cover_image: /blog/images/heice_main_image.jpg
 date: '2016-06-06'
 metadescription: >-
   Black Dog decided to sponsor a guide dog in Hong Kong as part of our ongoing
