@@ -10,28 +10,30 @@ publish_mode: editorial_workflow
 
 collections: # A list of collections the CMS should be able to edit
   - name: "news" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "News Article" # Used in the UI, ie.: "New Post"
+    label: "Create News Article" # Used in the UI, ie.: "New Post"
     folder: "source/blog/news" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
-      - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "news"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Summary", name: "summary", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Featured Image", name: "cover_image", widget: "image"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Summary", name: "metadescription", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "learning-zone" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Learning Zone Article" # Used in the UI, ie.: "New Post"
+    label: "Create Learning Zone Article" # Used in the UI, ie.: "New Post"
     folder: "source/blog/learning-zone" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Layout", name: "layout", widget: "hidden", default: "article"}
-      - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Category", name: "category", widget: "hidden", default: "learning-zone"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "string"}
+      - {label: "Featured Image", name: "cover_image", widget: "image"}
+      - {label: "Date", name: "date", widget: "datetime"}
       - {label: "Summary", name: "summary", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
