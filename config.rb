@@ -3,7 +3,7 @@
 ###
 
 # Time.zone = "UTC"
-Time.zone = "Asia/Hong_Kong"
+Time.zone = "Hong Kong"
 require 'builder'
 
 activate :blog do |blog|
