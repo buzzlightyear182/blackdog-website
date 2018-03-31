@@ -34,4 +34,16 @@ If you’d like to know more about the work which Hong Kong Guide Dogs Associati
 
 Room 1146F, 11/F, Block F, Wah Lok Industrial Centre, 31-35 Shan Mei Street, Fotan, N.T.
 
-![null]()
+![Charlie the Guide Dog](/source/dsc_1004.jpg)
+
+![Charlie the Guide Dog with friends](/source/dsc_1019.jpg)
+
+![Charlie the Guide Dog and Sally](/source/dsc_1001.jpg)
+
+![Charlie the Guide Dog and the gang](/source/dsc_0994.jpg)
+
+![Charlie the Guide Dog so happy with friends](/source/dsc_0986.jpg)
+
+![Charlie dog](/source/dsc_1004.jpg)
+
+![]()
