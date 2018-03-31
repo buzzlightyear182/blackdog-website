@@ -3,7 +3,7 @@ title: Charlie The Guide Dog
 layout: article
 category: news
 tags: 'csr, guide dog'
-cover_image: /blog/images/heice_main_image.jpg
+cover_image: /blog/images/charlie_guide_dog.jpg
 date: '2016-06-06'
 metadescription: >-
   Black Dog decided to sponsor a guide dog in Hong Kong as part of our ongoing
@@ -34,16 +34,16 @@ If you’d like to know more about the work which Hong Kong Guide Dogs Associati
 
 Room 1146F, 11/F, Block F, Wah Lok Industrial Centre, 31-35 Shan Mei Street, Fotan, N.T.
 
-![Charlie the Guide Dog](/source/dsc_1004.jpg)
+![Charlie the Guide Dog](/blog/images/dsc_1004.jpg)
 
-![Charlie the Guide Dog with friends](/source/dsc_1019.jpg)
+![Charlie the Guide Dog with friends](/blog/images/dsc_1019.jpg)
 
-![Charlie the Guide Dog and Sally](/source/dsc_1001.jpg)
+![Charlie the Guide Dog and Sally](/blog/images/dsc_1001.jpg)
 
-![Charlie the Guide Dog and the gang](/source/dsc_0994.jpg)
+![Charlie the Guide Dog and the gang](/blog/images/dsc_0994.jpg)
 
-![Charlie the Guide Dog so happy with friends](/source/dsc_0986.jpg)
+![Charlie the Guide Dog so happy with friends](/blog/images/dsc_0986.jpg)
 
-![Charlie dog](/source/dsc_1004.jpg)
+![Charlie dog](/blog/images/dsc_1004.jpg)
 
-![Charlie such a cutie](/source/dsc_1028.jpg)
+![Charlie such a cutie](/blog/images/dsc_1028.jpg)
