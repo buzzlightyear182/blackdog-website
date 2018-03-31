@@ -51,9 +51,11 @@ helpers do
   end
 end
 
+set :url_root, 'https://www.blackdog-consultants.com'
+activate :search_engine_sitemap
+
 page "/feed.xml", layout: false
 page "/sitemap.xml", layout: false
-activate :search_engine_sitemap
 
 ###
 # Compass
