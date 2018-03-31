@@ -1,6 +1,6 @@
 <div class="row background-secondary" id="sellingPoints">
   <div class="divider">
-    <div class="col-md-5 col-md-offset-1 left-column">
+    <div class="col-md-5 offset-md-1 left-column">
       <div class="col-sm-6 col-md-8 logo-container">
         <%= image_tag 'logo.png', :class => "logo" %>
       </div>
@@ -14,7 +14,9 @@
   </div>
 </div>
 <div class="row text-heavy background-dark selling-points">
-  <%= partial "partials/selling-points/asia-pacific-wide-team" %>
-  <%= partial "partials/selling-points/regions-finest-experts" %>
-  <%= partial "partials/selling-points/magic-fairy-dust-fun" %>
+  <div class="container">
+    <%= partial "partials/selling-points/asia-pacific-wide-team" %>
+    <%= partial "partials/selling-points/regions-finest-experts" %>
+    <%= partial "partials/selling-points/magic-fairy-dust-fun" %>
+  </div>
 </div>

@@ -1,0 +1,165 @@
+.selling-points {
+  .number {
+    position: relative;
+    top: 45px;
+    line-height: 1;
+    padding: 0px 20px;
+    font-size: 10em;
+    font-weight: 700;
+    cursor: pointer;
+    color: $dark;
+
+    @include media-breakpoint-up(md) {
+      float: right;
+    }
+
+
+    @include media-breakpoint-down(md) {
+      font-size: 4em;
+    }
+
+
+    @include media-breakpoint-down(sm) {
+      top: 40px;
+    }
+
+
+    &:last-child {
+      @include media-breakpoint-up(xl) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  .content {
+    margin-bottom: 20px;
+
+    &:first-child .title:hover {
+      background-color: $secondary;
+    }
+
+    &:nth-of-type(2) .title:hover {
+      background-color: $light;
+    }
+
+    &:nth-of-type(3) .title:hover {
+      background-color: $primary;
+    }
+
+    .title {
+      @include media-breakpoint-down(md) {
+        font-size: 2.4em;
+      }
+    }
+  }
+
+  .title {
+    cursor: pointer;
+    padding: 10px;
+
+    &:hover {
+      color: $dark;
+      transition: all 0.5s ease;
+    }
+  }
+
+  .fa-paw {
+    margin-left: 10px;
+  }
+
+  .description {
+    border-left: 10px solid transparent;
+    padding-left: 15px;
+  }
+
+  .shape-pawprint-click {
+    margin-left: 15px;
+    width: 55px;
+    height: 50px;
+
+    @include media-breakpoint-down(sm) {
+      margin-left: 0px;
+      width: 40px;
+      height: 40px;
+    }
+
+
+    &:hover {
+      transform: scale(1.1);
+      transition-duration: 1s;
+      transition: all 1s ease;
+    }
+  }
+
+  .text-secondary {
+    .number {
+      background-color: $secondary;
+    }
+
+    .description, .title {
+      border-color: $secondary;
+    }
+
+    .link {
+      color: $secondary;
+
+      &:hover {
+        color: $dark;
+        background-color: $secondary;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .shape-pawprint-click {
+      fill: $secondary;
+    }
+  }
+
+  .text-primary {
+    .number {
+      background-color: $primary;
+    }
+
+    .description, .title {
+      border-color: $primary;
+    }
+
+    .link {
+      color: $primary;
+
+      &:hover {
+        color: $dark;
+        background-color: $primary;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .shape-pawprint-click {
+      fill: $primary;
+    }
+  }
+
+  .text-light {
+    .number {
+      background-color: $light;
+    }
+
+    .description, .title {
+      border-color: $light;
+    }
+
+    .link {
+      color: $light;
+
+      &:hover {
+        color: $dark;
+        background-color: $light;
+        transition: all 0.5s ease;
+      }
+    }
+
+    .shape-pawprint-click {
+      fill: $light;
+    }
+  }
+}

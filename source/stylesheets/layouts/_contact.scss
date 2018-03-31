@@ -1,0 +1,54 @@
+.contact {
+  .title {
+    text-align: center;
+  }
+
+  &.content {
+    margin-bottom: 0px;
+  }
+
+  label {
+    color: $secondary;
+  }
+
+  .text-muted {
+    color: lighten($secondary, 15%);
+  }
+
+  select {
+    height: 38px;
+  }
+
+  form {
+    @include media-breakpoint-down(sm) {
+      padding-bottom: 20px;
+    }
+  }
+
+  .form-control {
+    border: 0;
+    border-bottom: 3px solid $secondary;
+    background-color: transparent;
+    border-radius: 0px;
+    color: white;
+
+    &:active, &:focus {
+      background-color: white;
+      color: $dark;
+      transition: all 0.5s ease;
+    }
+  }
+
+  textarea.form-control {
+    border: 3px solid $secondary;
+  }
+}
+
+#contactUs {
+  background: $dark;
+
+  @include media-breakpoint-up(md) {
+    background: image-url("contact_bg.jpg") $dark no-repeat center;
+    background-size: 100% 100%;
+  }
+}

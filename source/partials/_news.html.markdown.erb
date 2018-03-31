@@ -1,6 +1,6 @@
 <div class="row background-secondary" id="latestNews">
   <div class="divider">
-    <div class="col-md-5 col-md-offset-1 left-column">
+    <div class="col-md-5 offset-md-1 left-column">
       <div class="col-sm-6 col-md-8 logo-container">
         <%= image_tag 'logo.png', :class => "logo" %>
       </div>
@@ -15,27 +15,25 @@
 </div>
 <div class="row news articles-main background-white">
   <ul>
-  <% news_array = data.articles.news.to_a.sort_by{ |id, e| e['date'] } %>
-  <% news_array.reverse.each do |news| %>
-  <% n = news[1] %>
+    <% articles_by_category("news")[0..2].each do |article| %>
     <li class='row'>
-      <div class="col-xs-12 col-lg-offset-1 col-lg-10 post">
-        <div class=" col-md-4 featured-image">
-          <%= image_tag(n.coverImage.url) %>
+      <div class="d-flex col-xs-12 offset-lg-1 col-lg-10 post">
+        <div class="col-md-4 featured-image">
+          <%= image_tag( article.data.cover_image ) %>
         </div>
         <div class="col-md-8 summary">
-          <h1 class="text-secondary"><%= n.title %></h1>
-          <small>posted on: <%= n.date.strftime('%d %b %Y') %></small><br>
-          <p class="metadescription"><%= n.metadescription %></p>
+          <h1 class="text-secondary"><%= article.title %></h1>
+          <small>posted on: <%= article.date.strftime('%d %b %Y') %></small><br>
+          <p class="metadescription"><%= article.data.metadescription %></p>
           <a class="btn btn-light-outline read-more link" target='_blank' rel="noopener noreferrer"
-          href="news/<%= n.slug%>">Read more here</a>
+          href="<%= article.url%>">Read more here</a>
         </div>
       </div>
     </li>
   <% end %>
   </ul>
-  <div class="col-xs-12 col-lg-offset-1 col-lg-10 post">
-    <a class="btn btn-light-outline forward link" href="/news-archives">
+  <div class="col-xs-12 offset-lg-1 col-lg-10 post">
+    <a class="btn btn-light-outline forward link" href="/news.html">
       View our full archives
       <i class="fa fa-chevron-right"></i>
     </a>

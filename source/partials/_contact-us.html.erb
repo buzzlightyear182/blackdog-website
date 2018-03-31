@@ -1,7 +1,7 @@
 <div class="row text-heavy background-dark content contact" id="contactUs">
   <h1 class="title text-secondary text-center wow fadeIn">Get in touch with us</h1>
   <div class="row">
-    <div class='col-lg-offset-3 col-lg-6'>
+    <div class='offset-lg-3 col-lg-6'>
       <!-- Hidden message to show if contact is successful. -->
       <div class="alert alert-success alert-dismissible text-center collapse" id="submitSuccess" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -17,41 +17,49 @@
         It looks like there was an error submitting the form. Please try again later or send us an email <a href="mailto:topdog@blackdog-consultants.com">topdog@blackdog-consultants.com</a>
       </div>
     </div>
-    <div class='col-lg-offset-3 col-lg-6 wow fadeIn'>
+    <div class='offset-lg-3 col-lg-6 wow fadeIn'>
       <form name="contactForm" id="contactForm">
-        <fieldset class="form-group col-md-6">
-          <label for="name">Name</label>
-          <input type="text" name="name" class="form-control" required>
-        </fieldset>
-        <fieldset class="form-group col-md-6">
-          <label for="email">Email</label>
-          <input type="email" name="_replyto" class="form-control" required>
-          <small class="text-muted">We'll never share your email with anyone else.</small>
-        </fieldset>
-        <fieldset class="form-group col-md-4">
-          <label for="subject">Subject</label>
-          <select name="subject" id="subject" name="_subject" class="form-control">
-            <option value="Coaching">Coaching</option>
-            <option value="Facilitation">Facilitation</option>
-            <option value="Training">Training</option>
-            <option value="Others">Others</option>
-          </select>
-        </fieldset>
-        <fieldset class="form-group col-md-4">
-          <label for="country">Country <small><em>(Optional)</em></small></label>
-          <input type="text" name="country" class="form-control">
-        </fieldset>
-        <fieldset class="form-group col-md-4">
-          <label for="company">Company <small><em>(Optional)</em></small></label>
-          <input type="text" name="company" class="form-control">
-        </fieldset>
-        <fieldset class="form-group col-md-12">
-          <label for="message">Message</label>
-          <textarea name="message" id="message" rows="6" class="form-control" required placeholder="Place your message here"></textarea>
-        </fieldset>
-        <input type="text" name="_gotcha" style="display:none" />
-        <div class="col-md-4 col-md-offset-4">
-          <input type="submit" value="Send" class="btn btn-secondary btn-block">
+        <div class="flex-row d-flex">
+          <fieldset class="form-group col-md-6">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" required>
+          </fieldset>
+          <fieldset class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" name="_replyto" class="form-control" required>
+            <small class="text-muted">We'll never share your email with anyone else.</small>
+          </fieldset>
+        </div>
+        <div class="flex-row d-flex">
+          <fieldset class="form-group col-md-4">
+            <label for="subject">Subject</label>
+            <select name="subject" id="subject" name="_subject" class="form-control">
+              <option value="Coaching">Coaching</option>
+              <option value="Facilitation">Facilitation</option>
+              <option value="Training">Training</option>
+              <option value="Others">Others</option>
+            </select>
+          </fieldset>
+          <fieldset class="form-group col-md-4">
+            <label for="country">Country <small><em>(Optional)</em></small></label>
+            <input type="text" name="country" class="form-control">
+          </fieldset>
+          <fieldset class="form-group col-md-4">
+            <label for="company">Company <small><em>(Optional)</em></small></label>
+            <input type="text" name="company" class="form-control">
+          </fieldset>
+        </div>
+        <div class="flex-row d-flex">
+          <fieldset class="form-group col-md-12">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="6" class="form-control" required placeholder="Place your message here"></textarea>
+          </fieldset>
+        </div>
+        <div class="flex-row d-flex">
+          <input type="text" name="_gotcha" style="display:none" />
+          <div class="col-md-4 offset-md-4">
+            <input type="submit" value="Send" class="btn btn-secondary btn-block">
+          </div>
         </div>
       </form>
     </div>

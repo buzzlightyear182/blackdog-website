@@ -1,3 +1,7 @@
+---
+layout: article
+---
+
 <!doctype html>
 <html>
   <head>
@@ -22,14 +26,33 @@
     <%= javascript_include_tag  :modernizr %>
   </head>
   <% if page_classes.include? 'news-archives' %>
-    <body class="<%= page_classes %> cbp-spmenu-push article background-secondary">
+    <body class="<%= page_classes %> cbp-spmenu-push article background-secondary <%= current_article.data.category %>">
   <% else %>
-    <body class="<%= page_classes %> cbp-spmenu-push article background-white">
+    <body class="<%= page_classes %> cbp-spmenu-push article background-white <%= current_article.data.category %>">
   <% end %>
       <%= partial 'partials/shapes' %>
       <%= partial 'partials/navigation/article' %>
-      <div class="container whole ">
-        <%= yield %>
+      <div class="container whole">
+        <%= partial '/partials/logo_heading' %>
+          <div class="row background-white">
+            <div class='text-heavy d-md-flex'>
+              <div class="col-md-4 cover-image">
+                <%= image_tag(current_article.data.cover_image) %>
+              </div>
+              <div class="col-md-8 content">
+                <h1 class="title"><%= current_article.title %></h1>
+                <div class="description">
+                  <%= yield %>
+                  <div class="back">
+                    <a class="btn btn-dark-outline link" href="<%= category_path(current_article.data.category) %>">
+                      <i class="fa fa-chevron-left"></i>
+                      View our other <%= current_article.data.category.titleize %>  articles
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         <%= partial 'partials/video_modal' %>
       </div>
     </div>

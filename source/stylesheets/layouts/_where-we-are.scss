@@ -1,0 +1,474 @@
+.where-we-are {
+  padding-top: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #80a5bf;
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 10px;
+  }
+
+
+  .title {
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+.where-we-are.icons {
+  padding-bottom: 60px;
+}
+
+// .map-container
+//   text-align: center
+//   z-index: -10
+//   margin: auto
+
+// .map
+//   position: relative
+//   top: 0
+//   left: 0
+//   z-index: 0
+//   @include media-breakpoint-up(md)
+//     width: 768px
+//   @include media-breakpoint-up(lg)
+//     width: 992px
+//   @include media-breakpoint-up(xl)
+//     width: 1200px
+
+.cities-container {
+  background: image-url("map_revised_01.jpg") #80a5bf no-repeat center;
+  background-size: 100%;
+  margin: auto;
+
+  @include media-breakpoint-up(md) {
+    width: 768px;
+    height: 543px;
+  }
+
+
+  @include media-breakpoint-up(lg) {
+    width: 992px;
+    height: 701px;
+  }
+
+
+  @include media-breakpoint-up(xl) {
+    height: 848px;
+    width: 1200px;
+  }
+
+
+  @include mq(1440px) {
+    height: 1020px;
+    width: 1440px;
+  }
+
+
+  .icons-container {
+    float: right;
+    right: 40px;
+    margin-top: 120px;
+  }
+
+  .city-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.cities {
+  position: absolute;
+  top: 0;
+
+  li {
+    cursor: pointer;
+    z-index: 2;
+    height: 22px;
+    width: 22px;
+  }
+
+  .shape-pawprint {
+    fill: white;
+    padding: 2px;
+    background-color: $dark;
+    border-radius: 10px;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+
+
+    @include media-breakpoint-up(md) {
+      width: 15px;
+      height: 15px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      width: 19px;
+      height: 19px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      height: 22px;
+      width: 22px;
+    }
+
+
+    &:hover {
+      // box-shadow: 0px 0px 15px 1px rgba(229,84,68,0.6)
+      transform: scale(1.1);
+      transition: all 0.5s ease;
+    }
+  }
+
+  .country {
+    position: relative;
+  }
+
+  .philippines {
+    @include mq(768px) {
+      top: 345px;
+      left: 492px;
+    }
+
+
+    @include mq(793px) {
+      top: 325px;
+      left: 490px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 396px;
+      left: 640px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 470px;
+      left: 775px;
+    }
+
+
+    @include mq(1440px) {
+      top: 565px;
+      left: 930px;
+    }
+  }
+
+  .hongkong {
+    @include mq(768px) {
+      top: 280px;
+      left: 435px;
+    }
+
+
+    @include mq(793px) {
+      top: 258px;
+      left: 435px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 325px;
+      left: 560px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 385px;
+      left: 685px;
+    }
+
+
+    @include mq(1440px) {
+      top: 460px;
+      left: 820px;
+    }
+  }
+
+  .china {
+    @include mq(768px) {
+      top: 220px;
+      left: 410px;
+    }
+
+
+    @include mq(793px) {
+      top: 200px;
+      left: 410px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 260px;
+      left: 520px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 305px;
+      left: 625px;
+    }
+
+
+    @include mq(1440px) {
+      top: 365px;
+      left: 765px;
+    }
+  }
+
+  .india {
+    @include mq(768px) {
+      top: 300px;
+      left: 185px;
+    }
+
+
+    @include mq(793px) {
+      top: 280px;
+      left: 185px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 365px;
+      left: 240px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 440px;
+      left: 290px;
+    }
+
+
+    @include mq(1440px) {
+      top: 540px;
+      left: 350px;
+    }
+  }
+
+  .singapore {
+    @include mq(768px) {
+      top: 345px;
+      left: 375px;
+    }
+
+
+    @include mq(793px) {
+      top: 320px;
+      left: 375px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 430px;
+      left: 485px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 527px;
+      left: 588px;
+    }
+
+
+    @include mq(1440px) {
+      top: 645px;
+      left: 710px;
+    }
+  }
+
+  .malaysia {
+    @include mq(768px) {
+      top: 305px;
+      left: 355px;
+    }
+
+
+    @include mq(793px) {
+      top: 280px;
+      left: 355px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 385px;
+      left: 462px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 475px;
+      left: 558px;
+    }
+
+
+    @include mq(1440px) {
+      top: 595px;
+      left: 675px;
+    }
+  }
+
+  .indonesia {
+    @include mq(768px) {
+      top: 355px;
+      left: 406px;
+    }
+
+
+    @include mq(793px) {
+      top: 330px;
+      left: 406px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 450px;
+      left: 525px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 563px;
+      left: 637px;
+    }
+
+
+    @include mq(1440px) {
+      top: 695px;
+      left: 765px;
+    }
+  }
+
+  .australia {
+    @include mq(768px) {
+      top: 360px;
+      left: 625px;
+    }
+
+
+    @include mq(793px) {
+      top: 335px;
+      left: 625px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 465px;
+      left: 810px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 585px;
+      left: 980px;
+    }
+
+
+    @include mq(1440px) {
+      top: 725px;
+      left: 1170px;
+    }
+  }
+
+  .japan {
+    @include mq(768px) {
+      top: 0px;
+      left: 539px;
+    }
+
+
+    @include mq(793px) {
+      top: -25px;
+      left: 539px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 5px;
+      left: 697px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 35px;
+      left: 845px;
+    }
+
+
+    @include mq(1440px) {
+      top: 69px;
+      left: 1018px;
+    }
+  }
+
+  .london {
+    @include mq(768px) {
+      top: 0px;
+      left: 106px;
+    }
+
+
+    @include mq(793px) {
+      top: -25px;
+      left: 106px;
+    }
+
+
+    @include media-breakpoint-up(lg) {
+      top: 11px;
+      left: 137px;
+    }
+
+
+    @include media-breakpoint-up(xl) {
+      top: 45px;
+      left: 166px;
+    }
+
+
+    @include mq(1440px) {
+      top: 85px;
+      left: 200px;
+    }
+  }
+}
+
+.city-icons {
+  list-style: none;
+  padding-left: 0px;
+
+  .title {
+    margin-bottom: 0px;
+  }
+
+  li {
+    display: inline-block;
+
+    &.single {
+      display: block;
+      float: none;
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+  }
+}
+
+.lower-icons-container {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+}

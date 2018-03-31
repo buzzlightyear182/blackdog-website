@@ -1,0 +1,49 @@
+---
+pageable: true
+per_page: 8
+---
+
+<div class="row article-list <%= category %>-archives">
+  <div class="divider welcome">
+    <div class="col-md-6 left-column">
+      <div class="col-sm-4 col-md-4 logo-container">
+        <%= image_tag 'logo.png', :class => "logo" %>
+      </div>
+      <div class="col-sm-11 content list">
+        <h1 class="title text-white">
+          <%= category.titleize %> Archives
+        </h1>
+      <ul class="fa-ul " >
+        <% page_articles.each_with_index do |article, i| %>
+        <li>
+          <a class="btn btn-light-outline no-border" href="<%= article.url %>">
+            <i class="fa-li fa fa-paw"></i>
+            <h2><%= article.title %></h2>
+            <small class="pull-left">posted on <%= article.date.strftime('%d %b %Y') %></small></h3>
+          </a>
+        </li>
+        <% end %>
+      </ul>
+      </div>
+      <% if paginate && num_pages > 1 %>
+        <p>Page <%= page_number %> of <%= num_pages %></p>
+
+        <% if prev_page %>
+          <p><%= link_to 'Previous page', prev_page %></p>
+        <% end %>
+      <% end %>
+      <% if paginate %>
+        <% if next_page %>
+          <p><%= link_to 'Next page', next_page %></p>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="col-md-6 hidden-sm-down image-container right-column">
+      <% if category == "news" %>
+        <%= image_tag 'news_archives.jpg' %>
+      <% else %>
+        <%= image_tag 'learning_zone.jpg' %>
+      <% end %>
+    </div>
+  </div>
+</div>
