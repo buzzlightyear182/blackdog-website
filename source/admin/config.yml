@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Category", name: "category", widget: "hidden", default: "news"}
       - {label: "Tags", name: "tags", widget: "string"}
       - {label: "Featured Image", name: "cover_image", widget: "image"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Date", name: "date", widget: "date"}
       - {label: "Summary", name: "metadescription", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "learning-zone" # Used in routes, ie.: /admin/collections/:slug/edit
