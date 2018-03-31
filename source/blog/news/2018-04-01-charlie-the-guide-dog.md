@@ -46,4 +46,4 @@ Room 1146F, 11/F, Block F, Wah Lok Industrial Centre, 31-35 Shan Mei Street, Fot
 
 ![Charlie dog](/source/dsc_1004.jpg)
 
-![]()
+![Charlie such a cutie](/source/dsc_1028.jpg)
