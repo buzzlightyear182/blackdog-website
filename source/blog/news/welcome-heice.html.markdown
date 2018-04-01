@@ -1,6 +1,6 @@
 ---
 title: Welcome Heice!
-date: 2016/05/21
+date: '2016-05-21'
 category: news
 tags: company
 metadescription: "We’re pleased to introduce Heice Yau to you all. Heice joined us from a fast-paced, customer-service background and she now works in our Client Solutions Team."

@@ -1,6 +1,6 @@
 ---
 title: Amy The Unicorn
-date: 2016/05/31
+date: '2016-05-31'
 category: learning-zone
 tags: company
 metadescription: "The best way leaders can add value to their organisation, is to build capabilities and capacities of staff by bringing out their peoples’ potential whilst removing their own interference through coaching."
