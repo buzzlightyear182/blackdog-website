@@ -12,7 +12,7 @@ metadescription: >-
 ---
 Most of you will know that last week we celebrated our 8th birthday at Black Dog. What a milestone! And at these milestones, we think it’s important to check in with industry friends, customers and our team and make sure we’re doing the right thing by them and we’re fulfilling our promise of excellence.
 
-As usual, we had some great feedback. Our website, whilst considered still fairly unique, needed a refresh (so we did that) and whilst we were at it, we gave our logo a makeover too. We think our new look reflects our brand personality well – we’d love to hear what you thoughts are. Check out [www.blackdog-consultants.com](www.blackdog-consultants.com) - oh and don’t forget to look for the secret video. \*Hint – look for ‘WOOF’. \*
+As usual, we had some great feedback. Our website, whilst considered still fairly unique, needed a refresh (so we did that) and whilst we were at it, we gave our logo a makeover too. We think our new look reflects our brand personality well – we’d love to hear what you thoughts are. Check out [www.blackdog-consultants.com](www.blackdog-consultants.com) - oh and don’t forget to look for the secret video. _\*Hint – look for ‘WOOF’! \*_
 
 Finally and most importantly, we have responded to our clients’ request for more interaction with them, to help them proactively deal with the increasingly tough challenges they face in both learning and development and in HR.
 
