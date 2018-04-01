@@ -41,6 +41,7 @@ layout: article
               </div>
               <div class="col-md-8 content">
                 <h1 class="title"><%= current_article.title %></h1>
+                <small>Published on: <%= current_article.date.strftime('%d %b %Y') %></small><hr>
                 <div class="description">
                   <%= yield %>
                   <div class="back">

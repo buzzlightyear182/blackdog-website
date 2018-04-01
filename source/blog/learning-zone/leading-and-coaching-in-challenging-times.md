@@ -5,7 +5,7 @@ category: learning-zone
 tags: 'coaching, consultants, leadership'
 cover_image: /blog/images/leona.jpg
 date: '2016-06-17T15:34:27+08:00'
-summary: >-
+metadescription: >-
   The best way leaders can add value to their organisation, is to build
   capabilities and capacities of staff by bringing out their peoples’ potential
   whilst removing their own interference through coaching.

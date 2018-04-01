@@ -15,36 +15,37 @@
 </div>
 <div class="row lz articles-main background-white">
   <div id="carousel-learningzone" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner" role="listbox">
-    <% articles_by_category("learning-zone")[0..2].each do |article| %>
-      <div class="carousel-item">
-        <div class="d-flex col-xs-12 offset-lg-1 col-lg-10 post lz">
-          <div class=" col-md-4 featured-image">
-            <%= image_tag(article.data.cover_image) %>
-          </div>
-          <div class="col-md-8 summary">
-            <h1 class="text-primary"><%= article.title %></h1>
-            <small>posted on: <%= article.date.strftime('%d %b %Y') %></small><br>
-            <p class="metadescription"><%= article.data.metadescription %></p>
-            <a class="btn btn-light-outline read-more link" target='_blank' rel="noopener noreferrer"
-              href="learningzone/<%= article.url%>">Read more here</a>
+    <div class="carousel-inner" role="listbox">
+      <% articles_by_category("learning-zone").first(3).each do |article| %>
+        <div class="carousel-item">
+          <div class="d-flex col-xs-12 offset-lg-1 col-lg-10 post lz">
+            <div class=" col-md-4 featured-image">
+              <%= image_tag(article.data.cover_image) %>
+            </div>
+            <div class="col-md-8 summary">
+              <h1 class="text-primary"><%= article.title %></h1>
+              <small>posted on: <%= article.date.strftime('%d %b %Y') %></small><br>
+              <p class="metadescription"><%= article.data.metadescription %></p>
+              <a class="btn btn-light-outline read-more link" target='_blank' rel="noopener noreferrer"
+                href="<%= article.url%>">Read more here</a>
+            </div>
           </div>
         </div>
-      </div>
-    <% end %>
-  </div>
-  <button type='button' class="left carousel-control" href="#carousel-learningzone" data-slide="prev">
-    <span class="icon-prev" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </button>
-  <button type='button' class="right carousel-control" href="#carousel-learningzone" data-slide="next">
-    <span class="icon-next" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </button>
-  <div class="col-xs-12 offset-lg-1 col-lg-10 post lz">
-    <a class="btn btn-light-outline forward link" href="/learning-zone">
-      View more Learning Zone articles
-      <i class="fa fa-chevron-right"></i>
-    </a>
+      <% end %>
+    </div>
+    <button type='button' class="left carousel-control-prev" href="#carousel-learningzone" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button type='button' class="right carousel-control-next" href="#carousel-learningzone" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+    <div class="col-xs-12 offset-lg-1 col-lg-10 post lz">
+      <a class="btn btn-light-outline forward link" href="/learning-zone">
+        View more Learning Zone articles
+        <i class="fa fa-chevron-right"></i>
+      </a>
+    </div>
   </div>
 </div>

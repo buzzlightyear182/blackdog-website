@@ -107,7 +107,7 @@ body.article {
   }
 }
 
-.learningzone {
+.learning-zone, .learningzone {
   .shape-pawprint-nav {
     fill: $primary;
   }
@@ -132,8 +132,8 @@ body.article {
       border-bottom: 0px solid;
 
       &:hover {
-        color: white;
-        // background-color: $secondary;
+        color: $dark;
+        background-color: $light;
         transition: all 0.5s ease;
       }
     }

@@ -15,7 +15,7 @@
 </div>
 <div class="row news articles-main background-white">
   <ul>
-    <% articles_by_category("news")[0..2].each do |article| %>
+    <% articles_by_category("news").first(3).each do |article| %>
     <li class='row'>
       <div class="d-flex col-xs-12 offset-lg-1 col-lg-10 post">
         <div class="col-md-4 featured-image">

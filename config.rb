@@ -50,6 +50,12 @@ helpers do
       resource.data.category == category
     end.sort_by { |resource| resource.data.date }
   end
+
+  # def latest_articles_by_category(category)
+  #   category_articles = sitemap.resources.select {|resource| resource.data.category == category}
+  #   sorted_category_articles = category_articles.sort_by {|a| a.date }
+  #   latest_category_articles = sorted_category_articles.first(3).reverse
+  # end
 end
 
 set :url_root, 'https://www.blackdog-consultants.com'
