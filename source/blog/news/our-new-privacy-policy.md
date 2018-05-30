@@ -1,5 +1,5 @@
 ---
-title: Our New Privacy Policy
+title: Black Dog Consultants Ltd - Privacy Policy
 layout: article
 category: news
 tags: 'privacy, laws'
