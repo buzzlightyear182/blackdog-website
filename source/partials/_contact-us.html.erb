@@ -17,36 +17,52 @@
         It looks like there was an error submitting the form. Please try again later or send us an email <a href="mailto:topdog@blackdog-consultants.com">topdog@blackdog-consultants.com</a>
       </div>
     </div>
+
     <div class='offset-lg-3 col-lg-6 wow fadeIn'>
-      <form name="contactForm" id="contactForm">
+       <form name="insightly_web_to_lead" action="https://crm.na1.insightly.com/WebToLead/Create" method="post" id="#contactForm">
+        <input type="hidden" name="formId" value="cNL8Q9zg/OSRxeue5S5SPw==" />
+        <div class="flex-row d-flex">
+          <fieldset class="form-group col-md-2">
+            <label for="insightly_title">Title </label>
+            <input id="insightly_Title" type="text" name="Title" class="form-control" required>
+          </fieldset>
+          <fieldset class="form-group col-md-4">
+            <label for="insightly_firstName">First Name</label>
+            <input id="insightly_firstName" type="text" name="FirstName" class="form-control" required>
+          </fieldset>
+          <fieldset class="form-group col-md-4">
+            <label for="insightly_lastName">Last Name</label>
+            <input id="insightly_lastName" type="text" name="LastName" class="form-control" required>
+          </fieldset>
+          <fieldset class="form-group col-md-2">
+            <label for="insightly_salutation">Salutation</label>
+            <input id="insightly_salutation" type="text" name="Salutation" class="form-control">
+          </fieldset>
+        </div>
         <div class="flex-row d-flex">
           <fieldset class="form-group col-md-6">
-            <label for="name">Name</label>
-            <input type="text" name="name" class="form-control" required>
+            <label for="insightly_organization">Organization</label>
+            <input type="text" id="insightly_organization" name="OrganizationName" class="form-control" required>
           </fieldset>
           <fieldset class="form-group col-md-6">
             <label for="email">Email</label>
-            <input type="email" name="_replyto" class="form-control" required>
+            <input type="email" id="insightly_Email" name="email" class="form-control" required>
             <small class="text-muted">We'll never share your email with anyone else.</small>
           </fieldset>
         </div>
         <div class="flex-row d-flex">
-          <fieldset class="form-group col-md-4">
+          <fieldset class="form-group col-md-6">
             <label for="subject">Subject</label>
-            <select name="subject" id="subject" name="_subject" class="form-control">
+            <select name="subject" id="subject" class="form-control">
               <option value="Coaching">Coaching</option>
               <option value="Facilitation">Facilitation</option>
               <option value="Training">Training</option>
               <option value="Others">Others</option>
             </select>
           </fieldset>
-          <fieldset class="form-group col-md-4">
+          <fieldset class="form-group col-md-6">
             <label for="country">Country <small><em>(Optional)</em></small></label>
             <input type="text" name="country" class="form-control">
-          </fieldset>
-          <fieldset class="form-group col-md-4">
-            <label for="company">Company <small><em>(Optional)</em></small></label>
-            <input type="text" name="company" class="form-control">
           </fieldset>
         </div>
         <div class="flex-row d-flex">
@@ -58,7 +74,9 @@
         <div class="flex-row d-flex">
           <input type="text" name="_gotcha" style="display:none" />
           <div class="col-md-4 offset-md-4">
-            <input type="submit" value="Send" class="btn btn-secondary btn-block">
+            <input type="hidden" id="insightly_ResponsibleUser" name="ResponsibleUser" value="1177148"/>
+           <input type="hidden" id="insightly_LeadSource" name="LeadSource" value="1110040"/>
+            <input type="submit" value="Submit" class="btn btn-secondary btn-block">
           </div>
         </div>
       </form>

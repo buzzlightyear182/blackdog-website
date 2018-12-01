@@ -29,28 +29,31 @@ $(function() {
     }
   )
 
-  $("#contactForm").validate({
-    submitHandler: function(form) {
-      $.ajax({
-        url: "//formspree.io/topdog@blackdog-consultants.com",
-        method: "POST",
-        data: {
-          name: $(form).find("input[name='name']").val(),
-          _replyto: $(form).find("input[name='_replyto']").val(),
-          subject: $(form).find("input[name='_subject']").val(),
-          country: $(form).find("input[name='_country']").val(),
-          company: $(form).find("input[name='_company']").val(),
-          message: $(form).find("textarea[name='message']").val()
-        },
-        dataType: "json",
-        success: function() {
-          $("#submitSuccess").fadeIn();
-          // $("#contactForm").fadeOut();
-        },
-        error: function() {
-          $("#submitErrors").fadeIn();
-        }
-      });
-    }
-  });
+  // $("#contactForm").validate({
+  //   submitHandler: function(form) {
+  //     $.ajax({
+  //       url: "//crm.na1.insightly.com/WebToLead/Create",
+  //       method: "POST",
+  //       data: {
+  //         formID: $(form).find("input[name='formId']").val(),
+  //         firstname: $(form).find("input[name='FirstName']").val(),
+  //         lastname: $(form).find("input[name='LastName']").val(),
+  //         salutation: $(form).find("input[name='Salutation']").val(),
+  //         organization: $(form).find("input[name='OrganizationName']").val(),
+  //         email: $(form).find("input[name='email']").val(),
+  //         subject: $(form).find("input[name='subject']").val(),
+  //         country: $(form).find("input[name='country']").val(),
+  //         message: $(form).find("textarea[name='message']").val()
+  //       },
+  //       dataType: "json",
+  //       success: function() {
+  //         $("#submitSuccess").fadeIn();
+  //         // $("#contactForm").fadeOut();
+  //       },
+  //       error: function() {
+  //         $("#submitErrors").fadeIn();
+  //       }
+  //     });
+  //   }
+  // });
 });
