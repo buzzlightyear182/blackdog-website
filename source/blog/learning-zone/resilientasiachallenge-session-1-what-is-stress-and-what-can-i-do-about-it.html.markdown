@@ -1,5 +1,5 @@
 ---
-title: ResilientAsiaChallenge Session 1: Why do I feel this way? What is stress & what can I do about it?
+title: '#ResilientAsiaChallenge Session 1: Why do I feel this way? What is stress & what can I do about it?'
 layout: article
 date: '2020-06-10'
 category: learning-zone
@@ -25,7 +25,10 @@ At a community level, Michael Chan suggests keeping a routine during these tryin
 
 To register for session 2: Brain training — How can I re-programme the way I think about stress so I can limit my stress triggers? Click [www.resilientasiachallenge.com](https://www.resilientasiachallenge.com "Resilient Asia Challenge")
 
-*Footnotes:*
-- *Hailing from the U.K., Jeremy Stunt typically works with senior leaders who grapple with high levels of stress. Notably, he previously led teams through the SARS financial crisis and therefore his advice during the current virus is invaluable.*
-- *A Hong Kong native, Michael Chan is a Programme Manager of Responsible Business at Community Business. He has worked with companies across Asia to promote diversity, inclusion and employee wellbeing. He is also involved with the World Economic Forum and part of their Global Shapers Community, leading the hub’s mental health initiative called Shaping Minds and bringing us expert advice from a community perspective.*
-- *Article produced in collaboration with Happyer — The [modern job platform](http://www.happyer.io/ "Happyer.IO") for millennials and GenZ.*
+_Footnotes:_
+
+- _Hailing from the U.K., Jeremy Stunt typically works with senior leaders who grapple with high levels of stress. Notably, he previously led teams through the SARS financial crisis and therefore his advice during the current virus is invaluable._
+
+- _A Hong Kong native, Michael Chan is a Programme Manager of Responsible Business at Community Business. He has worked with companies across Asia to promote diversity, inclusion and employee wellbeing. He is also involved with the World Economic Forum and part of their Global Shapers Community, leading the hub’s mental health initiative called Shaping Minds and bringing us expert advice from a community perspective._
+
+- _Article produced in collaboration with Happyer — The [modern job platform](http://www.happyer.io/ "Happyer.IO") for millennials and GenZ._
