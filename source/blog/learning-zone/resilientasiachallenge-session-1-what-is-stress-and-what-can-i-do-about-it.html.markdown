@@ -1,10 +1,10 @@
 ---
-title: #ResilientAsiaChallenge Session 1: Why do I feel this way? What is stress & what can I do about it?
+title: ResilientAsiaChallenge Session 1: Why do I feel this way? What is stress & what can I do about it?
 date: '2020-06-10'
 category: learning-zone
 tags: resilient asia challenge, 
 metadescription: "Resilient Asia Challenge Session 1: What is stress and what can we do about it?"
-cover_image: '../blog/images/RAC_session1.jpeg'
+cover_image: /blog/images/RAC_session1.jpeg
 ---
 
 After recruiting the ‘brightest brains and experts from around the world’, today’s host Sally Leonard (CEO of Black Dog Consultants) introduces you to Episode 1 of the Resilient Asia Challenge. This 5-week journey of webinars intends to give back to the community during this difficult time and equip viewers/readers with the tools to tactically combat their own daily stress.
