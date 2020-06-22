@@ -4,7 +4,7 @@ layout: article
 date: '2020-06-23'
 category: learning-zone
 tags: 'resilient asia challenge'
-cover_image: /blog/images/RAC_session4.png
+cover_image: /blog/images/RAC_session5.png
 metadescription: >-
   In this last session, we will be focusing on the ‘holy trinity’ of good health which is ‘sleep, exercise and nutrition’ to conclude our journey to resilience.
 ---
