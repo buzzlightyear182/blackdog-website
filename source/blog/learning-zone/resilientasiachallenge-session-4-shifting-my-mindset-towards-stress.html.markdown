@@ -9,8 +9,6 @@ metadescription: >-
   This session explores ‘What is happening in my environment that is getting in my way of changing my habits and shifting my mindset towards stress?’ and how parents and remote workers alike can alleviate environmental stress.
 ---
 
-### Session 3: How can I recognise stress in myself early, so I can prevent it from taking over my life?
-
 While some might be lucky enough to find their inner ‘zen’ through meditation, exercise or a Netflix binge, many of us often have bigger environmental factors preventing us from changing our habits. Whether it is working with stir-crazy, homeschooled children, trying to be productive in a matchbox apartment or frazzled nerves triggering our self-doubt, it can be hard to quash stress during this virus.
 
 Session #4 of the [www.resilientasiachallenge.com](https://www.resilientasiachallenge.com "Resilient Asia Challenge") gives those of us floundering under the weight of our stress some much needed pointers. We explore ‘What is happening in my environment that is getting in my way of changing my habits and shifting my mindset towards stress?’ and how parents and remote workers alike can alleviate environmental stress. Leading this session is [Raatha Ganesh](https://www.linkedin.com/in/raathaganesh/ "Raatha Ganesh"), The Disruptor in Chief (or mischief, depending on who you’re asking) at Resilio. She is once again joined by [Sally Leonard](https://www.linkedin.com/in/sallyleonard/ "Sally Leonard") as the moderator of this session along with two expert guest contributors — [Dr. Nutsa Kobakhidze](https://www.linkedin.com/in/magdanutsakobakhidze "Dr. Nutsa Kobakhidze") and [Rajiv Bhandari]("https://www.linkedin.com/in/rajiv-b-228843 "Rajiv Bhandari").
