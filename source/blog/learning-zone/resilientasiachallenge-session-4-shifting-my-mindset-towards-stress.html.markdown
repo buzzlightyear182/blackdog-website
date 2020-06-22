@@ -4,7 +4,7 @@ layout: article
 date: '2020-06-23'
 category: learning-zone
 tags: 'resilient asia challenge'
-cover_image: /blog/images/RAC_session4.jpeg
+cover_image: /blog/images/RAC_session4.png
 metadescription: >-
   This session explores ‘What is happening in my environment that is getting in my way of changing my habits and shifting my mindset towards stress?’ and how parents and remote workers alike can alleviate environmental stress.
 ---
