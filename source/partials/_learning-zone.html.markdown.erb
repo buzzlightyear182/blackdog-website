@@ -16,7 +16,7 @@
 <div class="row lz articles-main background-white">
   <div id="carousel-learningzone" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
-      <% articles_by_category("learning-zone").first(3).each do |article| %>
+      <% articles_by_category("learning-zone").last(3).each do |article| %>
         <div class="carousel-item">
           <div class="d-flex col-xs-12 offset-lg-1 col-lg-10 post lz">
             <div class=" col-md-4 featured-image">
